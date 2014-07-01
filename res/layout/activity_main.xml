@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FF6582f3"
+    android:fitsSystemWindows="true" >
+
+    <android.support.v4.widget.DrawerLayout
+        android:id="@+id/drawer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fadingEdge="horizontal"
+        android:fitsSystemWindows="true"
+        android:hapticFeedbackEnabled="false"
+        android:overScrollMode="never" >
+
+        <FrameLayout
+            android:id="@+id/content_frame"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+        </FrameLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#FFffffff"
+            android:fitsSystemWindows="true"
+            tools:ignore="UselessParent" >
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/welcome"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/view1"
+                android:background="#ffffffff"
+                tools:ignore="UnknownIdInLayout" >
+            </android.support.v4.view.ViewPager>
+
+            <View
+                android:id="@+id/view1"
+                android:layout_width="match_parent"
+                android:layout_height="140dp"
+                android:background="#FF6582f3"
+                android:fitsSystemWindows="true" >
+            </View>
+
+            <ImageView
+                android:id="@+id/googleImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/view1"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                android:src="@drawable/google"
+                tools:ignore="ContentDescription" />
+
+            <!-- <View -->
+            <!-- android:id="@+id/divider" -->
+            <!-- android:layout_width="match_parent" -->
+            <!-- android:layout_height="3dp" -->
+            <!-- android:layout_alignParentLeft="true" -->
+            <!-- android:layout_below="@+id/view1" -->
+            <!-- android:background="#26000000" /> -->
+
+
+            <!--
+      ^^^ Use this to add a divider under the image, also sometimes 
+          emulates a shadow-like effect
+            -->
+
+        </RelativeLayout>
+
+        <ListView
+            android:id="@+id/left_drawer"
+            android:layout_width="305.00dp"
+            android:layout_height="fill_parent"
+            android:layout_gravity="start"
+            android:background="#FFffffff"
+            android:cacheColorHint="#266582f3"
+            android:choiceMode="singleChoice"
+            android:divider="@drawable/list_divider"
+            android:dividerHeight="1.00dp"
+            android:longClickable="false"
+            android:orientation="vertical"
+            android:overScrollMode="never"
+            android:scrollbars="none"
+            android:scrollingCache="true" />
+    </android.support.v4.widget.DrawerLayout>
+
+</FrameLayout>

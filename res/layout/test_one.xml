@@ -1,0 +1,43 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#e8e8e8" >
+
+    <Button
+        android:id="@+id/mockupBottomButton"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:background="#d5d5d5"
+        android:fontFamily="sans-serif-thin"
+        android:text="@string/a_fancy_button"
+        android:textColor="#242424"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        tools:ignore="SpUsage" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:layout_above="@id/mockupBottomButton"
+        android:background="?android:attr/dividerHorizontal" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:fontFamily="sans-serif-thin"
+        android:text="@string/oh_snap"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#242424"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        tools:ignore="SpUsage" />
+
+</RelativeLayout>

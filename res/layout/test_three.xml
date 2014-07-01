@@ -1,0 +1,57 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#2d2d2d" >
+
+    <TextView
+        android:id="@+id/forReal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="20dp"
+        android:text="@string/for_real_though_"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#D9e5e8ed" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignLeft="@+id/forReal"
+        android:layout_alignRight="@+id/forReal"
+        android:layout_below="@id/forReal"
+        android:background="#e5e8ed" />
+
+    <TextView
+        android:id="@+id/hopeThisHelped"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:fontFamily="sans-serif"
+        android:text="@string/i_hoped_this_helped_"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#e5e8ed"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        tools:ignore="SpUsage" />
+
+    <TextView
+        android:id="@+id/happyFace"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/hopeThisHelped"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:fontFamily="sans-serif-thin"
+        android:paddingTop="8dp"
+        android:text="@string/_"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#e5e8ed"
+        android:textSize="16dp"
+        android:textStyle="normal"
+        tools:ignore="SpUsage" />
+
+</RelativeLayout>
