@@ -41,7 +41,7 @@
             <View
                 android:id="@+id/view1"
                 android:layout_width="match_parent"
-                android:layout_height="140dp"
+                android:layout_height="160dp"
                 android:background="#FF6582f3"
                 android:fitsSystemWindows="true" >
             </View>
