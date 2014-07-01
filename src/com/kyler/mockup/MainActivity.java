@@ -93,9 +93,10 @@ public class MainActivity extends FragmentActivity {
 				mDrawerList, false);
 		mDrawerList.addHeaderView(header, null, false); // See below if you want to make the Header clickable...
 		
-		// mDrawerList.addHeaderView(header, null, true);  
-		// ^^^ This makes the Header clickable.
-		// It will be position 0 in your case break on line 186 (already commented with // Header)
+		/* mDrawerList.addHeaderView(header, null, true);  
+		   ^^^ This makes the Header clickable.
+		   It will be position 0 in your case break on line 186 (already commented with // Header) */
+		
 		mDrawerToggle = new ActionBarDrawerToggle(
 
 		this, mDrawerLayout, R.drawable.invisible, R.string.drawer_open,
