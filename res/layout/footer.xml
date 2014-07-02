@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_alignParentBottom="true"
+    android:layout_weight="1"
+    android:background="#FFffffff" >
+
+    <View
+        android:id="@+id/google_nav_drawer_divider_top"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="#0d000000" />
+
+    <TextView
+        android:id="@android:id/text1"
+        style="@style/GoogleNavDrawer.SecondarySectionText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/google_nav_drawer_divider_top"
+        android:layout_toRightOf="@android:id/icon"
+        android:background="@drawable/footer"
+        android:fontFamily="sans-serif-light"
+        android:paddingLeft="30dp"
+        android:text="@string/about"
+        android:textColor="#242424"
+        android:textSize="13.0sp" >
+    </TextView>
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_alignBottom="@android:id/text1"
+        android:layout_alignParentTop="true"
+        android:adjustViewBounds="true"
+        android:background="@drawable/footer"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ic_action_about"
+        tools:ignore="ContentDescription" />
+
+    <View
+        android:id="@+id/google_nav_drawer_divider_bottom"
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:layout_below="@id/imageView1"
+        android:background="@android:color/transparent" />
+
+</RelativeLayout>

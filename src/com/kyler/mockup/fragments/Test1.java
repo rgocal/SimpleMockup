@@ -14,7 +14,7 @@ public class Test1 extends Fragment {
 	public View onCreateView(LayoutInflater inflater, ViewGroup container,
 			Bundle savedInstanceState) {
 
-		final View view = inflater.inflate(R.layout.test_one, container, false);
+		View view = inflater.inflate(R.layout.test_one, container, false);
 
 		return view;
 

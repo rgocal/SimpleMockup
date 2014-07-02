@@ -16,8 +16,8 @@ public class MockupAdapter extends FragmentPagerAdapter {
 	private String tabtitles[] = new String[] { "Test 1", "Test 2", "Test 3" };
 	Context context;
 
-	public MockupAdapter(FragmentManager fm) {
-		super(fm);
+	public MockupAdapter(FragmentManager fragmentManager) {
+		super(fragmentManager);
 	}
 
 	@Override

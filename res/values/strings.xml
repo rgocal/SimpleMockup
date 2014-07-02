@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">mockup</string>
-    <string name="mockup_blank"> </string>
+    <string name="app_name">Simple Mockup</string>
+    <string name="mockup_blank"></string>
     <string name="drawer_open">Open</string>
     <string name="drawer_close">Close</string>
     <string name="a_fancy_button">A fancy button</string>
@@ -11,5 +11,12 @@
     <string name="for_real_though_">For real though.</string>
     <string name="i_hoped_this_helped_">I hoped this helped.</string>
     <string name="_">:)</string>
+    <string name="welcome">Welcome!</string>
+    <string name="dialog_hello">Hello, and welcome to an app I like to call \'SimpleMockup\' !</string>
+    <string name="dialog_hello_two">Underneath this, you will find a little app I built that features (what I think) is some useful stuff! A MenuDrawer with added layout tricks, and a ViewPager with a fixed/static ImageView at the top, and (if you have KitKat) a translucent app decor.</string>
+    <string name="okay">Okay</string>
+    <string name="more_info">I will try and keep this updated as much as possible for you guys, adding in any code you guys request. :)</string>
+    <string name="about">About</string>
+    <string name="enjoy">Enjoy!</string>
 
 </resources>
