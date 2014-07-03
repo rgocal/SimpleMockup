@@ -13,10 +13,14 @@
     <string name="_">:)</string>
     <string name="welcome">Welcome!</string>
     <string name="dialog_hello">Hello, and welcome to an app I like to call \'SimpleMockup\' !</string>
-    <string name="dialog_hello_two">Underneath this, you will find a little app I built that features (what I think) is some useful stuff! A MenuDrawer with added layout tricks, and a ViewPager with a fixed/static ImageView at the top, and (if you have KitKat) a translucent app decor.</string>
+    <string name="dialog_hello_two">Underneath this (custom) Dialog, you will find an app I built that features (what I think) is some useful stuff! A MenuDrawer with added layout tricks, and a ViewPager with a fixed/static ImageView at the top, and (if you have KitKat) a translucent app decor.</string>
     <string name="okay">Okay</string>
-    <string name="more_info">I will try and keep this updated as much as possible for you guys, adding in any code you guys request. :)</string>
+    <string name="more_info">I will try and keep this updated as much as possible for you guys, adding in any code you guys request. Now, scroll down and press \'okay\'! :)</string>
     <string name="about">About</string>
     <string name="enjoy">Enjoy!</string>
+    <string name="lul">That parallax tho. ;)</string>
+    <string name="rabble_rabble_rabble">You see, this is the very first item called because oncreate returned null. I programmed the code to naturally selectItem(0) if that is the case. And because we also added a header to the listview, this makes this position 0. So, the header is the 0 position (case 0), whereas item one is case 1, and so on. If that doesn\'t make sense, then ignore my babbling and enjoy the beauty of this app. ;)</string>
+    <string name="its_technically_not_begging">You should definitely rate this app 5 stars. ;)</string>
+    <string name="a_tip">Keep scrolling down! Also, this is a ViewPager. Feel free to swipe left and right as you please.</string>
 
 </resources>

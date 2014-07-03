@@ -50,7 +50,7 @@ public class SimpleMockup extends FragmentActivity {
 	private String[] mCategories;
 
 	Fragment item1 = new DrawerFragment1();
-	Fragment item2 = new DrawerFragment2();
+	Fragment gh = new DrawerFragment2();
 	Fragment item3 = new DrawerFragment3();
 	Fragment item4 = new DrawerFragment4();
 	Fragment about = new AboutFragment();
@@ -86,7 +86,7 @@ public class SimpleMockup extends FragmentActivity {
 
 		getActionBar().setTitle(R.string.mockup_blank);
 
-		getActionBar().setIcon(R.drawable.ic_navigation_drawer);
+		getActionBar().setIcon(R.drawable.ic_drawer);
 
 		getActionBar().setDisplayHomeAsUpEnabled(true);
 
@@ -157,7 +157,7 @@ public class SimpleMockup extends FragmentActivity {
 			public void onDrawerClosed(View view) {
 
 				getActionBar().setTitle(R.string.mockup_blank);
-				getActionBar().setIcon(R.drawable.ic_navigation_drawer);
+				getActionBar().setIcon(R.drawable.ic_drawer);
 
 				invalidateOptionsMenu();
 
@@ -166,7 +166,7 @@ public class SimpleMockup extends FragmentActivity {
 			public void onDrawerOpened(View drawerView) {
 
 				getActionBar().setTitle(R.string.mockup_blank);
-				getActionBar().setIcon(R.drawable.ic_navigation_drawer);
+				getActionBar().setIcon(R.drawable.ic_drawer);
 
 				invalidateOptionsMenu();
 
@@ -240,7 +240,7 @@ public class SimpleMockup extends FragmentActivity {
 			break;
 
 		case 2:
-			ft.replace(R.id.content_frame, item2);
+			ft.replace(R.id.content_frame, gh);
 			break;
 
 		case 3:

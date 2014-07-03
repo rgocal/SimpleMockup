@@ -3,17 +3,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FF6582f3" >
+    android:background="#FF3f51b5" >
 
     <ImageView
         android:id="@+id/banner"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:adjustViewBounds="true"
-        android:scaleType="fitCenter"
-        android:src="@drawable/mockup_header_example"
+        android:scaleType="fitStart"
+        android:src="@drawable/simplemockupindigo_compressed"
         tools:ignore="ContentDescription" />
 
 </RelativeLayout>

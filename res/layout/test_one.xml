@@ -1,62 +1,66 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<com.nirhart.parallaxscroll.views.ParallaxScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="fill_parent"
-    android:layout_height="fill_parent"
-    android:background="#e8e8e8" >
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e5e8ed"
+    android:fitsSystemWindows="true"
+    android:longClickable="false"
+    android:orientation="vertical"
+    android:overScrollMode="never"
+    android:scrollbars="none"
+    android:scrollingCache="true"
+    app:parallax_factor="2.3"
+    tools:context="com.kyler.mockup.activities.FirstRunDialogActivity" >
 
-    <Button
-        android:id="@+id/mockupBottomButton"
-        android:layout_width="wrap_content"
-        android:layout_height="50dp"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentRight="true"
-        android:background="#d5d5d5"
-        android:fontFamily="sans-serif-thin"
-        android:text="@string/a_fancy_button"
-        android:textColor="#242424"
-        android:textSize="20dp"
-        android:textStyle="bold"
-        tools:ignore="SpUsage" />
-
-    <View
-        android:id="@+id/divider"
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
         android:layout_width="match_parent"
-        android:layout_height="4dp"
-        android:background="?android:attr/dividerHorizontal" />
-
-    <TextView
-        android:id="@+id/textView1"
-        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
-        android:fontFamily="sans-serif-thin"
-        android:text="@string/oh_snap"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:textColor="#242424"
-        android:textSize="20dp"
-        android:textStyle="bold"
-        tools:ignore="SpUsage" />
-
-    <View
-        android:id="@+id/view1"
-        android:layout_width="match_parent"
-        android:layout_height="135dp"
-        android:background="#FF6582f3"
         android:fitsSystemWindows="true" >
-    </View>
 
-    <ImageView
-        android:id="@+id/googleImage"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/view1"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:adjustViewBounds="true"
-        android:scaleType="fitCenter"
-        android:src="@drawable/google"
-        tools:ignore="ContentDescription" />
+        <ImageView
+            android:id="@+id/iconImage"
+            android:layout_width="75dp"
+            android:layout_height="400dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:adjustViewBounds="true"
+            android:background="#FF3f51b5"
+            android:paddingBottom="7dp"
+            android:paddingTop="7dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/simplemockupindigo_compressed"
+            tools:ignore="ContentDescription" />
+        
+        <TextView
+            android:id="@+id/DoIt"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/iconImage"
+            android:layout_centerHorizontal="true"
+            android:background="#e5e8ed"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:fontFamily="sans-serif-thin"
+            android:text="@string/a_tip"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#FF242424" />        
 
-</RelativeLayout>
+        <TextView
+            android:id="@+id/wowwwww"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/DoIt"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:background="#e5e8ed"
+            android:paddingTop="800dp"
+            android:fontFamily="sans-serif-thin"
+            android:text="@string/its_technically_not_begging"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#FF242424" />
+    </RelativeLayout>
+
+</com.nirhart.parallaxscroll.views.ParallaxScrollView>

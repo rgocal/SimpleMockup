@@ -58,7 +58,7 @@
         android:id="@+id/view1"
         android:layout_width="match_parent"
         android:layout_height="135dp"
-        android:background="#FF6582f3"
+        android:background="#FF3f51b5"
         android:fitsSystemWindows="true" >
     </View>
 

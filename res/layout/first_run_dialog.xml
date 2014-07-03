@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FF6582f3"
+    android:background="#FF3f51b5"
     android:fitsSystemWindows="true" >
 
     <com.nirhart.parallaxscroll.views.ParallaxScrollView
@@ -31,16 +31,16 @@
             <ImageView
                 android:id="@+id/iconImage"
                 android:layout_width="75dp"
-                android:layout_height="190dp"
+                android:layout_height="220dp"
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentRight="true"
                 android:layout_alignParentTop="true"
                 android:adjustViewBounds="true"
-                android:background="#FF6582f3"
+                android:background="#FF3f51b5"
                 android:paddingBottom="7dp"
                 android:paddingTop="7dp"
                 android:scaleType="fitCenter"
-                android:src="@drawable/simplemockupapplogo"
+                android:src="@drawable/simplemockupindigo_compressed"
                 tools:ignore="ContentDescription" />
 
             <TextView
@@ -55,7 +55,7 @@
                 android:paddingTop="10dp"
                 android:text="@string/dialog_hello"
                 android:textAppearance="?android:attr/textAppearanceMedium"
-                android:textColor="#FF6582f3" />
+                android:textColor="#FF242424" />
 
             <TextView
                 android:id="@+id/textView2"
@@ -71,7 +71,7 @@
                 android:paddingTop="10dp"
                 android:text="@string/dialog_hello_two"
                 android:textAppearance="?android:attr/textAppearanceMedium"
-                android:textColor="#FF6582f3"
+                android:textColor="#242424"
                 android:textStyle="normal" />
 
             <TextView
@@ -88,7 +88,7 @@
                 android:paddingTop="10dp"
                 android:text="@string/more_info"
                 android:textAppearance="?android:attr/textAppearanceMedium"
-                android:textColor="#FF6582f3"
+                android:textColor="#242424"
                 android:textStyle="normal" />
 
             <TextView
@@ -103,7 +103,7 @@
                 android:paddingTop="300dp"
                 android:text="@string/enjoy"
                 android:textAppearance="?android:attr/textAppearanceMedium"
-                android:textColor="#FF6582f3"
+                android:textColor="#242424"
                 tools:ignore="HardcodedText" />
 
             <View
@@ -118,7 +118,7 @@
             <Button
                 android:id="@+id/okButton"
                 android:layout_width="wrap_content"
-                android:layout_height="50dp"
+                android:layout_height="55dp"
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentRight="true"
                 android:layout_below="@id/divider"
@@ -126,7 +126,7 @@
                 android:fitsSystemWindows="true"
                 android:fontFamily="sans-serif-thin"
                 android:text="@string/okay"
-                android:textColor="#ffffff"
+                android:textColor="#e5e8ed"
                 android:textSize="18dp"
                 android:textStyle="normal"
                 tools:ignore="SpUsage" />
