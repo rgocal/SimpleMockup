@@ -21,7 +21,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_below="@+id/view1"
-            android:background="#ffffffff"
+            android:background="#FF3f51b5"
             tools:ignore="UnknownIdInLayout" >
         </android.support.v4.view.ViewPager>
 
@@ -47,13 +47,13 @@
 
         <ListView
             android:id="@+id/left_drawer"
-            android:layout_width="300.00dp"
+            android:layout_width="290.00dp"
             android:layout_height="fill_parent"
             android:layout_gravity="start|left"
-            android:background="#FFffffff"
+            android:background="@color/background_material_light"
             android:cacheColorHint="#266582f3"
             android:choiceMode="singleChoice"
-            android:divider="@drawable/list_divider"
+            android:divider="@drawable/list_divider_material"
             android:dividerHeight="1.00dp"
             android:longClickable="false"
             android:orientation="vertical"

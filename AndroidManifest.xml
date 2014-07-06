@@ -2,11 +2,11 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     package="com.kyler.mockup"
-    android:versionCode="3"
-    android:versionName="0.0.25" >
+    android:versionCode="4"
+    android:versionName="0.0.3" >
 
     <uses-sdk
-        android:maxSdkVersion="19"
+        android:maxSdkVersion="21"
         android:minSdkVersion="16"
         android:targetSdkVersion="19"
         tools:ignore="OldTargetApi" />
@@ -31,6 +31,25 @@
             android:label="@string/mockup_blank"
             android:theme="@style/SimpleMockupDialog" >
         </activity>
+        <activity
+            android:name="com.kyler.mockup.activities.RequestByEmail"
+            android:label="@string/request"
+            android:parentActivityName="com.kyler.mockup.SimpleMockup"
+            android:theme="@style/Theme.RequestByEmail" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.kyler.mockup.SimpleMockup" />
+        </activity>
+        
+        <activity
+            android:name="com.kyler.mockup.activities.About"
+            android:label="@string/request"
+            android:parentActivityName="com.kyler.mockup.SimpleMockup"
+            android:theme="@style/Theme.About" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.kyler.mockup.SimpleMockup" />
+        </activity>         
     </application>
 
 </manifest>

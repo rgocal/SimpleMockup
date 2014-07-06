@@ -5,13 +5,13 @@
     android:layout_height="fill_parent"
     android:layout_alignParentBottom="true"
     android:layout_weight="1"
-    android:background="#FFffffff" >
+    android:background="@color/background_material_light" >
 
     <View
         android:id="@+id/google_nav_drawer_divider_top"
         android:layout_width="fill_parent"
         android:layout_height="1dp"
-        android:background="#0d000000" />
+        android:background="@drawable/list_divider_material" />
 
     <TextView
         android:id="@android:id/text1"
@@ -25,7 +25,7 @@
         android:paddingLeft="30dp"
         android:text="@string/about"
         android:textColor="#242424"
-        android:textSize="13.0sp" >
+        android:textSize="15sp" >
     </TextView>
 
     <ImageView

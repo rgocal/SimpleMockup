@@ -22,5 +22,16 @@
     <string name="rabble_rabble_rabble">You see, this is the very first item called because oncreate returned null. I programmed the code to naturally selectItem(0) if that is the case. And because we also added a header to the listview, this makes this position 0. So, the header is the 0 position (case 0), whereas item one is case 1, and so on. If that doesn\'t make sense, then ignore my babbling and enjoy the beauty of this app. ;)</string>
     <string name="its_technically_not_begging">You should definitely rate this app 5 stars. ;)</string>
     <string name="a_tip">Keep scrolling down! Also, this is a ViewPager. Feel free to swipe left and right as you please.</string>
+    <string name="examples">Examples</string>
+    <string name="recipient">Recipient</string>
+    <string name="message_body">Message body</string>
+    <string name="subject">Subject</string>
+    <string name="send">Send</string>
+    <string name="request">Request</string>
+    <string name="my_email">MBQSniper@hotmail.com</string>
+    <string name="feature_request">Feature Request</string>
+    <string name="recipient_bold">Recipient:</string>
+    <string name="bold_subject">Subject:</string>
+    <string name="version">Version 0.0.3</string>
 
 </resources>

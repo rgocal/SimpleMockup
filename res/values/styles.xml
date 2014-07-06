@@ -43,5 +43,27 @@
         <item name="android:textSize">13sp</item>
         <item name="android:minHeight">@dimen/secondary_section_item_height</item>
     </style>
+    
+    <style name="Theme.RequestByEmail" parent="@android:style/Theme.Holo.Light">
+        <item name="android:fontFamily">sans-serif-thin</item>
+        <item name="android:actionBarStyle">@style/Theme.ActionBar.RequestByEmail</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:homeAsUpIndicator">@drawable/ic_action_back</item>
+    </style>
+    
+    <style name="Theme.ActionBar.RequestByEmail" parent="@android:style/Widget.Holo.Light.ActionBar.Solid.Inverse">
+        <item name="android:background">@android:color/transparent</item>
+    </style>   
+    
+    <style name="Theme.About" parent="@android:style/Theme.Holo.Light">
+        <item name="android:fontFamily">sans-serif-thin</item>
+        <item name="android:actionBarStyle">@style/Theme.ActionBar.About</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:homeAsUpIndicator">@drawable/ic_action_back</item>
+    </style>
+    
+    <style name="Theme.ActionBar.About" parent="@android:style/Widget.Holo.Light.ActionBar.Solid.Inverse">
+        <item name="android:background">@android:color/transparent</item>
+    </style>     
 
 </resources>

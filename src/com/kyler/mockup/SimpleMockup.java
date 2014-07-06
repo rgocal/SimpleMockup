@@ -15,6 +15,9 @@ import android.support.v4.app.FragmentActivity;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.view.ViewPager;
 import android.support.v4.widget.DrawerLayout;
+import android.text.Spannable;
+import android.text.SpannableString;
+import android.text.style.TypefaceSpan;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -27,9 +30,10 @@ import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.ListView;
 
+import com.kyler.mockup.activities.About;
 import com.kyler.mockup.activities.FirstRunDialogActivity;
+import com.kyler.mockup.activities.RequestByEmail;
 import com.kyler.mockup.adapter.MockupAdapter;
-import com.kyler.mockup.fragments.AboutFragment;
 import com.kyler.mockup.fragments.DrawerFragment1;
 import com.kyler.mockup.fragments.DrawerFragment2;
 import com.kyler.mockup.fragments.DrawerFragment3;
@@ -53,11 +57,11 @@ public class SimpleMockup extends FragmentActivity {
 	Fragment gh = new DrawerFragment2();
 	Fragment item3 = new DrawerFragment3();
 	Fragment item4 = new DrawerFragment4();
-	Fragment about = new AboutFragment();
 
 	@SuppressLint("InlinedApi")
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
+	
 		super.onCreate(savedInstanceState);
 
 		SharedPreferences first = PreferenceManager
@@ -81,21 +85,24 @@ public class SimpleMockup extends FragmentActivity {
 
 		}
 
-		@SuppressWarnings("unused")
 		ActionBar actionBar = getActionBar();
 
 		getActionBar().setTitle(R.string.mockup_blank);
 
 		getActionBar().setIcon(R.drawable.ic_drawer);
 
+		SpannableString s = new SpannableString("");
+		s.setSpan(new TypefaceSpan("sans-serif-thin"), 0, s.length(),
+				Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
+
+		actionBar.setTitle(s);
+
 		getActionBar().setDisplayHomeAsUpEnabled(true);
 
 		getActionBar().setHomeButtonEnabled(true);
 
-		// getActionBar().setSubtitle("Version 0.0.2");
-
 		ImageView view = (ImageView) findViewById(android.R.id.home);
-		view.setPadding(40, 0, 0, 0);
+		view.setPadding(50, 20, 0, 0);
 
 		getWindow().setFlags(
 				WindowManager.LayoutParams.FLAG_HARDWARE_ACCELERATED,
@@ -107,8 +114,6 @@ public class SimpleMockup extends FragmentActivity {
 					WindowManager.LayoutParams.FLAG_TRANSLUCENT_NAVIGATION);
 			w.setFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS,
 					WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
-
-			// getWindow().setBackgroundDrawableResource(android.R.color.white);
 
 		}
 
@@ -236,7 +241,19 @@ public class SimpleMockup extends FragmentActivity {
 			break;
 
 		case 1:
-			ft.replace(R.id.content_frame, item1);
+			Intent request = new Intent(this, RequestByEmail.class);
+
+			/*
+			 * We would use Intent.FLAG_ACTIVITY_NO_ANIMATION if you wanted an
+			 * extremely smooth transition, or for whatever various reason you
+			 * May have.
+			 * 
+			 * request.setFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
+			 */
+
+			startActivity(request);
+			overridePendingTransition(R.anim.activity_open_enter,
+					R.anim.activity_open_exit);
 			break;
 
 		case 2:
@@ -253,7 +270,11 @@ public class SimpleMockup extends FragmentActivity {
 
 		case 5:
 			// Footer
-			ft.replace(R.id.content_frame, about);
+
+			Intent footer = new Intent(this, About.class);
+			startActivity(footer);
+			overridePendingTransition(R.anim.activity_open_enter,
+					R.anim.activity_open_exit);
 			break;
 
 		}
@@ -276,7 +297,6 @@ public class SimpleMockup extends FragmentActivity {
 
 		super.onPostCreate(savedInstanceState);
 
-		// Sync the toggle state after onRestoreInstanceState has occurred.
 		mDrawerToggle.syncState();
 	}
 

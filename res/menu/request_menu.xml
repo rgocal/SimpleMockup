@@ -1,0 +1,11 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/extraInformation"
+        android:icon="@drawable/extra_info_icon"
+        android:showAsAction="always"
+        android:title="@null"
+        android:visible="false">
+    </item>
+
+</menu>

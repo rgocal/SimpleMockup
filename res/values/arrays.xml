@@ -2,7 +2,7 @@
 <resources>
 
     <string-array name="navigation_main_sections">
-        <item>Item 1</item>
+        <item>Request</item>
         <item>Item 2</item>
         <item>Item 3</item>
         <item>Item 4</item>
