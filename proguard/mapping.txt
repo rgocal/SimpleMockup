@@ -2114,6 +2114,8 @@ com.kyler.mockup.activities.RequestByEmail -> com.kyler.mockup.activities.Reques
 com.kyler.mockup.activities.RequestByEmail$1 -> com.kyler.mockup.activities.b:
     com.kyler.mockup.activities.RequestByEmail this$0 -> a
     void onClick(android.view.View) -> onClick
+com.kyler.mockup.activities.TranslucentExample -> com.kyler.mockup.activities.TranslucentExample:
+    void onCreate(android.os.Bundle) -> onCreate
 com.kyler.mockup.adapter.MockupAdapter -> com.kyler.mockup.a.a:
     int PAGE_COUNT -> a
     java.lang.String[] tabtitles -> b

@@ -7,64 +7,75 @@
     android:background="#9c27b0"
     android:fitsSystemWindows="true" >
 
-    <com.nirhart.parallaxscroll.views.ParallaxScrollView
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:tools="http://schemas.android.com/tools"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@color/background_material_light"
-        android:fitsSystemWindows="true"
-        android:longClickable="false"
-        android:orientation="vertical"
-        android:overScrollMode="never"
-        android:scrollbars="none"
-        android:scrollingCache="true"
-        app:parallax_factor="2.3"
-        tools:context="com.kyler.mockup.activities.About" >
+        android:background="#f7f7f7"
+        android:fitsSystemWindows="true" >
 
-        <RelativeLayout
-            android:id="@+id/relativeLayout"
+        <View
+            android:id="@+id/purple"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:background="@color/background_material_light"
-            android:fitsSystemWindows="true" >
+            android:layout_height="220dp"
+            android:background="@color/purple" />
 
-            <View
-                android:id="@+id/purple"
-                android:layout_width="match_parent"
-                android:layout_height="220dp"
-                android:background="@color/purple" />
+        <View
+            android:id="@+id/divider"
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:layout_below="@id/purple"
+            android:background="#d5d5d5" />
 
-            <ImageView
-                android:id="@+id/imageView1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentLeft="true"
-                android:layout_centerVertical="true"
-                android:adjustViewBounds="true"
-                android:baselineAlignBottom="true"
-                android:cropToPadding="true"
-                android:gravity="center"
-                android:maxHeight="75dp"
-                android:scaleType="fitCenter"
-                android:src="@drawable/about_drawable"
-                tools:ignore="ContentDescription" />
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/purple"
+            android:layout_alignParentRight="true"
+            android:fontFamily="sans-serif-thin"
+            android:paddingBottom="10dp"
+            android:paddingRight="7dp"
+            android:paddingTop="7dp"
+            android:text="@string/version"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/background_material_light" />
 
-            <TextView
-                android:id="@+id/textView1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentRight="true"
-                android:layout_alignParentTop="true"
-                android:text="@string/version"
-                android:fontFamily="sans-serif-thin"
-                android:paddingRight="7dp"
-                android:paddingTop="7dp"
-                android:textColor="@color/background_material_light"
-                android:textAppearance="?android:attr/textAppearanceSmall" />
+        <TextView
+            android:id="@+id/about"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/purple"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:fontFamily="sans-serif-thin"
+            android:gravity="center|center_vertical"
+            android:text="@string/about"
+            android:textColor="#fafafa"
+            android:textSize="40sp"
+            tools:ignore="ContentDescription" />
 
-        </RelativeLayout>
-    </com.nirhart.parallaxscroll.views.ParallaxScrollView>
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="@string/app_info_about"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView2"
+            android:layout_centerHorizontal="true"
+            android:paddingTop="10dp"
+            android:text="@string/about_padding_warning"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+    </RelativeLayout>
 
 </FrameLayout>

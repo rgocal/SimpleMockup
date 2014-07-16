@@ -3,7 +3,7 @@
 
     <string-array name="navigation_main_sections">
         <item>Request</item>
-        <item>Item 2</item>
+        <item>Translucent Example</item>
         <item>Item 3</item>
         <item>Item 4</item>
     </string-array>

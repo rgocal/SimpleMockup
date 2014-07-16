@@ -125,7 +125,9 @@ com.kyler.mockup.R$drawable: int sendbutton_unpressed
 com.kyler.mockup.R$drawable: int simplemockupapplogo
 com.kyler.mockup.R$drawable: int simplemockupindigo
 com.kyler.mockup.R$drawable: int simplemockupindigo_compressed
+com.kyler.mockup.R$drawable: int simplemockuptranslucentimage
 com.kyler.mockup.R$id: int MDText
+com.kyler.mockup.R$id: int about
 com.kyler.mockup.R$id: int banner
 com.kyler.mockup.R$id: int body
 com.kyler.mockup.R$id: int boldRecipient
@@ -137,7 +139,6 @@ com.kyler.mockup.R$id: int drawer_layout
 com.kyler.mockup.R$id: int enjoy
 com.kyler.mockup.R$id: int extraInformation
 com.kyler.mockup.R$id: int forReal
-com.kyler.mockup.R$id: int googleImage
 com.kyler.mockup.R$id: int google_nav_drawer_divider_bottom
 com.kyler.mockup.R$id: int google_nav_drawer_divider_top
 com.kyler.mockup.R$id: int happyFace
@@ -175,11 +176,14 @@ com.kyler.mockup.R$layout: int splash
 com.kyler.mockup.R$layout: int test_one
 com.kyler.mockup.R$layout: int test_three
 com.kyler.mockup.R$layout: int test_two
+com.kyler.mockup.R$layout: int translucent_example
 com.kyler.mockup.R$menu: int request_menu
 com.kyler.mockup.R$string: int _
 com.kyler.mockup.R$string: int a_fancy_button
 com.kyler.mockup.R$string: int a_tip
 com.kyler.mockup.R$string: int about
+com.kyler.mockup.R$string: int about_padding_warning
+com.kyler.mockup.R$string: int app_info_about
 com.kyler.mockup.R$string: int app_name
 com.kyler.mockup.R$string: int bold_subject
 com.kyler.mockup.R$string: int dialog_hello
@@ -218,6 +222,9 @@ com.kyler.mockup.R$style: int Theme_About
 com.kyler.mockup.R$style: int Theme_ActionBar_About
 com.kyler.mockup.R$style: int Theme_ActionBar_RequestByEmail
 com.kyler.mockup.R$style: int Theme_RequestByEmail
+com.kyler.mockup.R$style: int TranslucentExample
+com.kyler.mockup.R$style: int TranslucentExample_Widget
+com.kyler.mockup.R$style: int TranslucentExampleAB
 com.kyler.mockup.R$styleable: int[] ParallaxScroll
 com.kyler.mockup.R$styleable: int ParallaxScroll_circular_parallax
 com.kyler.mockup.R$styleable: int ParallaxScroll_inner_parallax_factor
@@ -231,6 +238,8 @@ com.kyler.mockup.activities.FirstRunDialogActivity
 com.kyler.mockup.activities.FirstRunDialogActivity: FirstRunDialogActivity()
 com.kyler.mockup.activities.RequestByEmail
 com.kyler.mockup.activities.RequestByEmail: RequestByEmail()
+com.kyler.mockup.activities.TranslucentExample
+com.kyler.mockup.activities.TranslucentExample: TranslucentExample()
 com.nirhart.parallaxscroll.views.ParallaxExpandableListView: void setOnScrollListener(android.widget.AbsListView$OnScrollListener)
 com.nirhart.parallaxscroll.views.ParallaxListView: void setOnScrollListener(android.widget.AbsListView$OnScrollListener)
 com.nirhart.parallaxscroll.views.ParallaxScrollView

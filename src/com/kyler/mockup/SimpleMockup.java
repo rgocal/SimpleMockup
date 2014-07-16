@@ -7,7 +7,6 @@ import android.app.FragmentTransaction;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.res.Configuration;
-import android.os.Build;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
 import android.support.v4.app.ActionBarDrawerToggle;
@@ -23,8 +22,6 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
-import android.view.Window;
-import android.view.WindowManager;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ImageView;
@@ -33,6 +30,7 @@ import android.widget.ListView;
 import com.kyler.mockup.activities.About;
 import com.kyler.mockup.activities.FirstRunDialogActivity;
 import com.kyler.mockup.activities.RequestByEmail;
+import com.kyler.mockup.activities.TranslucentExample;
 import com.kyler.mockup.adapter.MockupAdapter;
 import com.kyler.mockup.fragments.DrawerFragment1;
 import com.kyler.mockup.fragments.DrawerFragment2;
@@ -61,7 +59,7 @@ public class SimpleMockup extends FragmentActivity {
 	@SuppressLint("InlinedApi")
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
-	
+
 		super.onCreate(savedInstanceState);
 
 		SharedPreferences first = PreferenceManager
@@ -102,20 +100,7 @@ public class SimpleMockup extends FragmentActivity {
 		getActionBar().setHomeButtonEnabled(true);
 
 		ImageView view = (ImageView) findViewById(android.R.id.home);
-		view.setPadding(50, 20, 0, 0);
-
-		getWindow().setFlags(
-				WindowManager.LayoutParams.FLAG_HARDWARE_ACCELERATED,
-				WindowManager.LayoutParams.FLAG_HARDWARE_ACCELERATED);
-
-		if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
-			Window w = getWindow();
-			w.setFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_NAVIGATION,
-					WindowManager.LayoutParams.FLAG_TRANSLUCENT_NAVIGATION);
-			w.setFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS,
-					WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
-
-		}
+		view.setPadding(50, 0, 0, 0);
 
 		setContentView(R.layout.activity_main);
 
@@ -257,7 +242,10 @@ public class SimpleMockup extends FragmentActivity {
 			break;
 
 		case 2:
-			ft.replace(R.id.content_frame, gh);
+			Intent translucent = new Intent(this, TranslucentExample.class);
+			startActivity(translucent);
+			overridePendingTransition(R.anim.activity_open_enter,
+					R.anim.activity_open_exit);
 			break;
 
 		case 3:

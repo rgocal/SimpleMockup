@@ -33,5 +33,7 @@
     <string name="recipient_bold">Recipient:</string>
     <string name="bold_subject">Subject:</string>
     <string name="version">Version 0.0.3</string>
+    <string name="app_info_about">"This is where you'd put some information about your app. :) "</string>
+    <string name="about_padding_warning">Be sure to use some padding!</string>
 
 </resources>

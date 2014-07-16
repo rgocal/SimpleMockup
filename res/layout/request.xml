@@ -42,7 +42,7 @@
                 android:fontFamily="sans-serif-light"
                 android:gravity="center"
                 android:hint="@string/recipient"
-                android:inputType="none|textEmailAddress"
+                android:inputType="none"
                 android:paddingTop="7dp"
                 android:text="@string/my_email"
                 android:textColor="#242424"
@@ -62,7 +62,7 @@
                 android:fontFamily="sans-serif-light"
                 android:gravity="center"
                 android:hint="@string/subject"
-                android:inputType="none|text"
+                android:inputType="none"
                 android:paddingTop="7dp"
                 android:text="@string/feature_request"
                 android:textColor="#242424"
@@ -109,11 +109,13 @@
                 android:fontFamily="sans-serif-thin"
                 android:gravity="top"
                 android:hint="@string/message_body"
-                android:inputType="text"
+                android:inputType="textCapSentences"
                 android:paddingLeft="15dp"
                 android:paddingRight="15dp"
                 android:paddingTop="25dp"
                 android:textColor="#242424" >
+
+                <requestFocus />
             </EditText>
 
             <View

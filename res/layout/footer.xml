@@ -5,7 +5,7 @@
     android:layout_height="fill_parent"
     android:layout_alignParentBottom="true"
     android:layout_weight="1"
-    android:background="@color/background_material_light" >
+    android:background="#f9f9f9" >
 
     <View
         android:id="@+id/google_nav_drawer_divider_top"
@@ -36,6 +36,7 @@
         android:layout_alignParentTop="true"
         android:adjustViewBounds="true"
         android:background="@drawable/footer"
+        android:paddingLeft="5dp"
         android:scaleType="fitCenter"
         android:src="@drawable/ic_action_about"
         tools:ignore="ContentDescription" />

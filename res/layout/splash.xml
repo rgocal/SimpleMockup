@@ -6,20 +6,20 @@
     android:background="#FF3f51b5"
     android:fitsSystemWindows="true" >
 
-<RelativeLayout
-    android:background="#FF3f51b5"
-    android:layout_width="fill_parent"
-    android:layout_height="fill_parent" >
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#FF3f51b5" >
 
-    <ImageView
-        android:id="@+id/imageView1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
-        android:scaleType="fitCenter"
-        android:src="@drawable/simplemockupindigo_compressed"
-        tools:ignore="ContentDescription" />
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:scaleType="fitCenter"
+            android:src="@drawable/simplemockupindigo_compressed"
+            tools:ignore="ContentDescription" />
+    </RelativeLayout>
 
-</RelativeLayout>
 </FrameLayout>

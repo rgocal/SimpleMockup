@@ -47,13 +47,13 @@
 
         <ListView
             android:id="@+id/left_drawer"
-            android:layout_width="290.00dp"
+            android:layout_width="285.00dp"
             android:layout_height="fill_parent"
             android:layout_gravity="start|left"
-            android:background="@color/background_material_light"
-            android:cacheColorHint="#266582f3"
+            android:background="#f9f9f9"
+            android:cacheColorHint="#26d5d5d5"
             android:choiceMode="singleChoice"
-            android:divider="@drawable/list_divider_material"
+            android:divider="#59d5d5d5"
             android:dividerHeight="1.00dp"
             android:longClickable="false"
             android:orientation="vertical"

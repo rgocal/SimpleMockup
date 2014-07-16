@@ -10,8 +10,7 @@ import android.text.SpannableString;
 import android.text.style.TypefaceSpan;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.Window;
-import android.view.WindowManager;
+
 import com.kyler.mockup.R;
 
 public class About extends Activity {
@@ -34,19 +33,6 @@ public class About extends Activity {
 		getActionBar().setDisplayHomeAsUpEnabled(true);
 
 		getActionBar().setHomeButtonEnabled(true);
-
-		if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
-			Window w = getWindow();
-			
-			/*
-			 * w.setFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_NAVIGATION,
-			 * WindowManager.LayoutParams.FLAG_TRANSLUCENT_NAVIGATION);
-			 */
-			
-			w.setFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS,
-					WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
-
-		}
 
 		setContentView(R.layout.about);
 

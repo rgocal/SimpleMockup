@@ -5,7 +5,9 @@
         <item name="android:actionBarStyle">@style/MockupMainAB</item>
         <item name="android:actionBarWidgetTheme">@style/Mockup.Widget</item>
         <item name="android:windowContentOverlay">@null</item>
-        <item name="android:homeAsUpIndicator">@drawable/ic_action_back</item>
+        <item name="android:fitsSystemWindows">true</item>
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowTranslucentNavigation">true</item>
     </style>
 
     <style name="Mockup.Widget" parent="@android:style/Theme.Holo">
@@ -50,6 +52,9 @@
         <item name="android:actionBarStyle">@style/Theme.ActionBar.RequestByEmail</item>
         <item name="android:windowContentOverlay">@null</item>
         <item name="android:homeAsUpIndicator">@drawable/ic_action_back</item>
+        <item name="android:fitsSystemWindows">true</item>
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowTranslucentNavigation">true</item>
     </style>
 
     <style name="Theme.ActionBar.RequestByEmail" parent="@android:style/Widget.Holo.Light.ActionBar.Solid.Inverse">
@@ -60,11 +65,35 @@
         <item name="android:fontFamily">sans-serif-thin</item>
         <item name="android:actionBarStyle">@style/Theme.ActionBar.About</item>
         <item name="android:windowContentOverlay">@null</item>
+        <item name="android:fitsSystemWindows">true</item>
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowTranslucentNavigation">true</item>
         <item name="android:homeAsUpIndicator">@drawable/ic_action_back</item>
     </style>
 
     <style name="Theme.ActionBar.About" parent="@android:style/Widget.Holo.Light.ActionBar.Solid.Inverse">
         <item name="android:background">@android:color/transparent</item>
     </style>
+    
+    <style name="TranslucentExample" parent="@android:style/Theme.Holo.Light">
+        <item name="android:fontFamily">sans-serif-thin</item>
+        <item name="android:actionBarStyle">@style/TranslucentExampleAB</item>
+        <item name="android:actionBarWidgetTheme">@style/TranslucentExample.Widget</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:fitsSystemWindows">false</item>
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowTranslucentNavigation">false</item>
+        <item name="android:homeAsUpIndicator">@drawable/ic_action_back</item>
+    </style>
+
+    <style name="TranslucentExample.Widget" parent="@android:style/Theme.Holo">
+        <item name="android:textColorHint">@android:color/white</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="TranslucentExampleAB" parent="@android:style/Widget.Holo.Light.ActionBar.Solid.Inverse">
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:fontFamily">sans-serif-thin</item>
+    </style>    
 
 </resources>

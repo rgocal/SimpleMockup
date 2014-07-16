@@ -70423,12 +70423,10 @@ _____________________________________________________________________
 
 Interfaces (count = 0):
 
-Constant Pool (count = 362):
+Constant Pool (count = 349):
   + Integer [8388611]
-  + Integer [16777216]
   + Integer [16908332]
   + Integer [67108864]
-  + Integer [134217728]
   + Integer [2130837505]
   + Integer [2130837513]
   + Integer [2130837515]
@@ -70439,10 +70437,10 @@ Constant Pool (count = 362):
   + Integer [2130968576]
   + Integer [2130968577]
   + Integer [2131099648]
-  + Integer [2131296261]
-  + Integer [2131296262]
   + Integer [2131296264]
   + Integer [2131296265]
+  + Integer [2131296267]
+  + Integer [2131296268]
   + Integer [2131361793]
   + Integer [2131361794]
   + Integer [2131361795]
@@ -70457,7 +70455,7 @@ Constant Pool (count = 362):
   + Class [android/content/SharedPreferences]
   + Class [android/content/SharedPreferences$Editor]
   + Class [android/content/res/Resources]
-  + Class [android/os/Build$VERSION]
+  + Class [android/os/Bundle]
   + Class [android/preference/PreferenceManager]
   + Class [android/support/v4/app/a]
   + Class [android/support/v4/app/t]
@@ -70468,7 +70466,6 @@ Constant Pool (count = 362):
   + Class [android/view/LayoutInflater]
   + Class [android/view/MenuItem]
   + Class [android/view/ViewGroup]
-  + Class [android/view/Window]
   + Class [android/widget/ArrayAdapter]
   + Class [android/widget/ImageView]
   + Class [android/widget/ListView]
@@ -70477,13 +70474,13 @@ Constant Pool (count = 362):
   + Class [com/kyler/mockup/activities/About]
   + Class [com/kyler/mockup/activities/FirstRunDialogActivity]
   + Class [com/kyler/mockup/activities/RequestByEmail]
+  + Class [com/kyler/mockup/activities/TranslucentExample]
   + Class [com/kyler/mockup/b/a]
   + Class [com/kyler/mockup/b/b]
   + Class [com/kyler/mockup/b/c]
   + Class [com/kyler/mockup/b/d]
   + Class [com/kyler/mockup/c]
   + Class [com/kyler/mockup/d]
-  + Fieldref [android/os/Build$VERSION.SDK_INT I]
   + Fieldref [com/kyler/mockup/SimpleMockup.n Landroid/app/Fragment;]
   + Fieldref [com/kyler/mockup/SimpleMockup.o Landroid/app/Fragment;]
   + Fieldref [com/kyler/mockup/SimpleMockup.p Landroid/app/Fragment;]
@@ -70525,7 +70522,6 @@ Constant Pool (count = 362):
   + Methodref [android/text/SpannableString.setSpan (Ljava/lang/Object;III)V]
   + Methodref [android/text/style/TypefaceSpan.<init> (Ljava/lang/String;)V]
   + Methodref [android/view/LayoutInflater.inflate (ILandroid/view/ViewGroup;Z)Landroid/view/View;]
-  + Methodref [android/view/Window.setFlags (II)V]
   + Methodref [android/widget/ArrayAdapter.<init> (Landroid/content/Context;I[Ljava/lang/Object;)V]
   + Methodref [android/widget/ImageView.setPadding (IIII)V]
   + Methodref [android/widget/ListView.addFooterView (Landroid/view/View;Ljava/lang/Object;Z)V]
@@ -70543,7 +70539,6 @@ Constant Pool (count = 362):
   + Methodref [com/kyler/mockup/SimpleMockup.getLayoutInflater ()Landroid/view/LayoutInflater;]
   + Methodref [com/kyler/mockup/SimpleMockup.getResources ()Landroid/content/res/Resources;]
   + Methodref [com/kyler/mockup/SimpleMockup.getTitle ()Ljava/lang/CharSequence;]
-  + Methodref [com/kyler/mockup/SimpleMockup.getWindow ()Landroid/view/Window;]
   + Methodref [com/kyler/mockup/SimpleMockup.overridePendingTransition (II)V]
   + Methodref [com/kyler/mockup/SimpleMockup.setContentView (I)V]
   + Methodref [com/kyler/mockup/SimpleMockup.startActivity (Landroid/content/Intent;)V]
@@ -70567,7 +70562,6 @@ Constant Pool (count = 362):
   + NameAndType [<init> (Lcom/kyler/mockup/SimpleMockup;Lcom/kyler/mockup/d;)V]
   + NameAndType [<init> (Ljava/lang/CharSequence;)V]
   + NameAndType [<init> (Ljava/lang/String;)V]
-  + NameAndType [SDK_INT I]
   + NameAndType [a ()V]
   + NameAndType [a (I)V]
   + NameAndType [a (II)V]
@@ -70594,7 +70588,6 @@ Constant Pool (count = 362):
   + NameAndType [getResources ()Landroid/content/res/Resources;]
   + NameAndType [getStringArray (I)[Ljava/lang/String;]
   + NameAndType [getTitle ()Ljava/lang/CharSequence;]
-  + NameAndType [getWindow ()Landroid/view/Window;]
   + NameAndType [i (Landroid/view/View;)V]
   + NameAndType [inflate (ILandroid/view/ViewGroup;Z)Landroid/view/View;]
   + NameAndType [length ()I]
@@ -70617,7 +70610,6 @@ Constant Pool (count = 362):
   + NameAndType [setContentView (I)V]
   + NameAndType [setDisplayHomeAsUpEnabled (Z)V]
   + NameAndType [setDrawerListener (Landroid/support/v4/widget/c;)V]
-  + NameAndType [setFlags (II)V]
   + NameAndType [setHomeButtonEnabled (Z)V]
   + NameAndType [setIcon (I)V]
   + NameAndType [setItemChecked (IZ)V]
@@ -70641,7 +70633,6 @@ Constant Pool (count = 362):
   + Utf8 [()Landroid/content/res/Resources;]
   + Utf8 [()Landroid/support/v4/app/z;]
   + Utf8 [()Landroid/view/LayoutInflater;]
-  + Utf8 [()Landroid/view/Window;]
   + Utf8 [()Ljava/lang/CharSequence;]
   + Utf8 [()V]
   + Utf8 [()Z]
@@ -70681,7 +70672,6 @@ Constant Pool (count = 362):
   + Utf8 [<init>]
   + Utf8 [Code]
   + Utf8 [EXIT]
-  + Utf8 [I]
   + Utf8 [InlinedApi]
   + Utf8 [Landroid/annotation/SuppressLint;]
   + Utf8 [Landroid/app/Fragment;]
@@ -70690,7 +70680,6 @@ Constant Pool (count = 362):
   + Utf8 [Landroid/widget/ListView;]
   + Utf8 [Ljava/lang/CharSequence;]
   + Utf8 [RuntimeInvisibleAnnotations]
-  + Utf8 [SDK_INT]
   + Utf8 [StackMapTable]
   + Utf8 [[Ljava/lang/String;]
   + Utf8 [a]
@@ -70704,7 +70693,7 @@ Constant Pool (count = 362):
   + Utf8 [android/content/SharedPreferences]
   + Utf8 [android/content/SharedPreferences$Editor]
   + Utf8 [android/content/res/Resources]
-  + Utf8 [android/os/Build$VERSION]
+  + Utf8 [android/os/Bundle]
   + Utf8 [android/preference/PreferenceManager]
   + Utf8 [android/support/v4/app/a]
   + Utf8 [android/support/v4/app/t]
@@ -70715,7 +70704,6 @@ Constant Pool (count = 362):
   + Utf8 [android/view/LayoutInflater]
   + Utf8 [android/view/MenuItem]
   + Utf8 [android/view/ViewGroup]
-  + Utf8 [android/view/Window]
   + Utf8 [android/widget/ArrayAdapter]
   + Utf8 [android/widget/ImageView]
   + Utf8 [android/widget/ListView]
@@ -70725,6 +70713,7 @@ Constant Pool (count = 362):
   + Utf8 [com/kyler/mockup/activities/About]
   + Utf8 [com/kyler/mockup/activities/FirstRunDialogActivity]
   + Utf8 [com/kyler/mockup/activities/RequestByEmail]
+  + Utf8 [com/kyler/mockup/activities/TranslucentExample]
   + Utf8 [com/kyler/mockup/b/a]
   + Utf8 [com/kyler/mockup/b/b]
   + Utf8 [com/kyler/mockup/b/c]
@@ -70748,7 +70737,6 @@ Constant Pool (count = 362):
   + Utf8 [getResources]
   + Utf8 [getStringArray]
   + Utf8 [getTitle]
-  + Utf8 [getWindow]
   + Utf8 [i]
   + Utf8 [inflate]
   + Utf8 [length]
@@ -70771,7 +70759,6 @@ Constant Pool (count = 362):
   + Utf8 [setContentView]
   + Utf8 [setDisplayHomeAsUpEnabled]
   + Utf8 [setDrawerListener]
-  + Utf8 [setFlags]
   + Utf8 [setHomeButtonEnabled]
   + Utf8 [setIcon]
   + Utf8 [setItemChecked]
@@ -70825,39 +70812,39 @@ Methods (count = 9):
     Class member attributes (count = 1):
     + Code attribute instructions (code length = 49, locals = 1, stack = 3):
       [0] aload_0 v0
-      [1] invokespecial #87
+      [1] invokespecial #84
         + Methodref [android/support/v4/app/t.<init> ()V]
       [4] aload_0 v0
-      [5] new #54
+      [5] new #52
         + Class [com/kyler/mockup/b/a]
       [8] dup
-      [9] invokespecial #125
+      [9] invokespecial #120
         + Methodref [com/kyler/mockup/b/a.<init> ()V]
-      [12] putfield #61
+      [12] putfield #58
         + Fieldref [com/kyler/mockup/SimpleMockup.n Landroid/app/Fragment;]
       [15] aload_0 v0
-      [16] new #55
+      [16] new #53
         + Class [com/kyler/mockup/b/b]
       [19] dup
-      [20] invokespecial #126
+      [20] invokespecial #121
         + Methodref [com/kyler/mockup/b/b.<init> ()V]
-      [23] putfield #62
+      [23] putfield #59
         + Fieldref [com/kyler/mockup/SimpleMockup.o Landroid/app/Fragment;]
       [26] aload_0 v0
-      [27] new #56
+      [27] new #54
         + Class [com/kyler/mockup/b/c]
       [30] dup
-      [31] invokespecial #127
+      [31] invokespecial #122
         + Methodref [com/kyler/mockup/b/c.<init> ()V]
-      [34] putfield #63
+      [34] putfield #60
         + Fieldref [com/kyler/mockup/SimpleMockup.p Landroid/app/Fragment;]
       [37] aload_0 v0
-      [38] new #57
+      [38] new #55
         + Class [com/kyler/mockup/b/d]
       [41] dup
-      [42] invokespecial #128
+      [42] invokespecial #123
         + Methodref [com/kyler/mockup/b/d.<init> ()V]
-      [45] putfield #64
+      [45] putfield #61
         + Fieldref [com/kyler/mockup/SimpleMockup.q Landroid/app/Fragment;]
       [48] return
       Code attribute exceptions (count = 0):
@@ -70866,360 +70853,328 @@ Methods (count = 9):
     Access flags: 0x4
       = protected void onCreate(android.os.Bundle)
     Class member attributes (count = 2):
-    + Code attribute instructions (code length = 475, locals = 10, stack = 9):
+    + Code attribute instructions (code length = 431, locals = 10, stack = 9):
       [0] aload_0 v0
       [1] aload_1 v1
-      [2] invokespecial #89
+      [2] invokespecial #86
         + Methodref [android/support/v4/app/t.onCreate (Landroid/os/Bundle;)V]
       [5] aload_0 v0
-      [6] invokestatic #83
+      [6] invokestatic #80
         + Methodref [android/preference/PreferenceManager.getDefaultSharedPreferences (Landroid/content/Context;)Landroid/content/SharedPreferences;]
       [9] astore_2 v2
       [10] aload_0 v0
-      [11] invokevirtual #116
+      [11] invokevirtual #112
         + Methodref [com/kyler/mockup/SimpleMockup.getIntent ()Landroid/content/Intent;]
-      [14] ldc #24
+      [14] ldc #22
         + String [EXIT]
       [16] iconst_0
-      [17] invokevirtual #81
+      [17] invokevirtual #78
         + Methodref [android/content/Intent.getBooleanExtra (Ljava/lang/String;Z)Z]
       [20] ifeq +7 (target=27)
       [23] aload_0 v0
-      [24] invokevirtual #113
+      [24] invokevirtual #109
         + Methodref [com/kyler/mockup/SimpleMockup.finish ()V]
       [27] aload_2 v2
-      [28] ldc #25
+      [28] ldc #23
         + String [firstTime]
       [30] iconst_0
-      [31] invokeinterface #132
+      [31] invokeinterface #127
         + InterfaceMethodref [android/content/SharedPreferences.getBoolean (Ljava/lang/String;Z)Z]
       [36] ifne +57 (target=93)
-      [39] new #30
+      [39] new #28
         + Class [android/content/Intent]
       [42] dup
       [43] aload_0 v0
-      [44] ldc #52
+      [44] ldc #49
         + Class [com/kyler/mockup/activities/FirstRunDialogActivity]
-      [46] invokespecial #79
+      [46] invokespecial #76
         + Methodref [android/content/Intent.<init> (Landroid/content/Context;Ljava/lang/Class;)V]
       [49] astore_3 v3
       [50] aload_3 v3
-      [51] ldc #4
+      [51] ldc #3
         + Integer [67108864]
-      [53] invokevirtual #80
+      [53] invokevirtual #77
         + Methodref [android/content/Intent.addFlags (I)Landroid/content/Intent;]
       [56] pop
       [57] aload_0 v0
       [58] aload_3 v3
-      [59] invokevirtual #123
+      [59] invokevirtual #118
         + Methodref [com/kyler/mockup/SimpleMockup.startActivity (Landroid/content/Intent;)V]
       [62] aload_0 v0
-      [63] invokevirtual #113
+      [63] invokevirtual #109
         + Methodref [com/kyler/mockup/SimpleMockup.finish ()V]
       [66] aload_2 v2
-      [67] invokeinterface #131
+      [67] invokeinterface #126
         + InterfaceMethodref [android/content/SharedPreferences.edit ()Landroid/content/SharedPreferences$Editor;]
       [72] astore v4
       [74] aload v4
-      [76] ldc #25
+      [76] ldc #23
         + String [firstTime]
       [78] iconst_1
-      [79] invokeinterface #134
+      [79] invokeinterface #129
         + InterfaceMethodref [android/content/SharedPreferences$Editor.putBoolean (Ljava/lang/String;Z)Landroid/content/SharedPreferences$Editor;]
       [84] pop
       [85] aload v4
-      [87] invokeinterface #133
+      [87] invokeinterface #128
         + InterfaceMethodref [android/content/SharedPreferences$Editor.commit ()Z]
       [92] pop
       [93] aload_0 v0
-      [94] invokevirtual #114
+      [94] invokevirtual #110
         + Methodref [com/kyler/mockup/SimpleMockup.getActionBar ()Landroid/app/ActionBar;]
       [97] astore_3 v3
       [98] aload_0 v0
-      [99] invokevirtual #114
+      [99] invokevirtual #110
         + Methodref [com/kyler/mockup/SimpleMockup.getActionBar ()Landroid/app/ActionBar;]
-      [102] ldc #20
+      [102] ldc #18
         + Integer [2131361793]
-      [104] invokevirtual #74
+      [104] invokevirtual #71
         + Methodref [android/app/ActionBar.setTitle (I)V]
       [107] aload_0 v0
-      [108] invokevirtual #114
+      [108] invokevirtual #110
         + Methodref [com/kyler/mockup/SimpleMockup.getActionBar ()Landroid/app/ActionBar;]
-      [111] ldc #7
+      [111] ldc #5
         + Integer [2130837513]
-      [113] invokevirtual #73
+      [113] invokevirtual #70
         + Methodref [android/app/ActionBar.setIcon (I)V]
-      [116] new #40
+      [116] new #38
         + Class [android/text/SpannableString]
       [119] dup
-      [120] ldc #23
+      [120] ldc #21
         + String []
-      [122] invokespecial #97
+      [122] invokespecial #94
         + Methodref [android/text/SpannableString.<init> (Ljava/lang/CharSequence;)V]
       [125] astore v4
       [127] aload v4
-      [129] new #41
+      [129] new #39
         + Class [android/text/style/TypefaceSpan]
       [132] dup
-      [133] ldc #26
+      [133] ldc #24
         + String [sans-serif-thin]
-      [135] invokespecial #100
+      [135] invokespecial #97
         + Methodref [android/text/style/TypefaceSpan.<init> (Ljava/lang/String;)V]
       [138] iconst_0
       [139] aload v4
-      [141] invokevirtual #98
+      [141] invokevirtual #95
         + Methodref [android/text/SpannableString.length ()I]
       [144] bipush 33
-      [146] invokevirtual #99
+      [146] invokevirtual #96
         + Methodref [android/text/SpannableString.setSpan (Ljava/lang/Object;III)V]
       [149] aload_3 v3
       [150] aload v4
-      [152] invokevirtual #75
+      [152] invokevirtual #72
         + Methodref [android/app/ActionBar.setTitle (Ljava/lang/CharSequence;)V]
       [155] aload_0 v0
-      [156] invokevirtual #114
+      [156] invokevirtual #110
         + Methodref [com/kyler/mockup/SimpleMockup.getActionBar ()Landroid/app/ActionBar;]
       [159] iconst_1
-      [160] invokevirtual #71
+      [160] invokevirtual #68
         + Methodref [android/app/ActionBar.setDisplayHomeAsUpEnabled (Z)V]
       [163] aload_0 v0
-      [164] invokevirtual #114
+      [164] invokevirtual #110
         + Methodref [com/kyler/mockup/SimpleMockup.getActionBar ()Landroid/app/ActionBar;]
       [167] iconst_1
-      [168] invokevirtual #72
+      [168] invokevirtual #69
         + Methodref [android/app/ActionBar.setHomeButtonEnabled (Z)V]
       [171] aload_0 v0
-      [172] ldc #3
+      [172] ldc #2
         + Integer [16908332]
-      [174] invokevirtual #112
+      [174] invokevirtual #108
         + Methodref [com/kyler/mockup/SimpleMockup.findViewById (I)Landroid/view/View;]
-      [177] checkcast #47
+      [177] checkcast #44
         + Class [android/widget/ImageView]
       [180] astore v5
       [182] aload v5
       [184] bipush 50
-      [186] bipush 20
+      [186] iconst_0
+      [187] iconst_0
       [188] iconst_0
-      [189] iconst_0
-      [190] invokevirtual #104
+      [189] invokevirtual #100
         + Methodref [android/widget/ImageView.setPadding (IIII)V]
-      [193] aload_0 v0
-      [194] invokevirtual #120
-        + Methodref [com/kyler/mockup/SimpleMockup.getWindow ()Landroid/view/Window;]
-      [197] ldc #2
-        + Integer [16777216]
-      [199] ldc #2
-        + Integer [16777216]
-      [201] invokevirtual #102
-        + Methodref [android/view/Window.setFlags (II)V]
-      [204] getstatic #60
-        + Fieldref [android/os/Build$VERSION.SDK_INT I]
-      [207] bipush 19
-      [209] ificmplt +27 (target=236)
-      [212] aload_0 v0
-      [213] invokevirtual #120
-        + Methodref [com/kyler/mockup/SimpleMockup.getWindow ()Landroid/view/Window;]
-      [216] astore v6
-      [218] aload v6
-      [220] ldc #5
-        + Integer [134217728]
-      [222] ldc #5
-        + Integer [134217728]
-      [224] invokevirtual #102
-        + Methodref [android/view/Window.setFlags (II)V]
-      [227] aload v6
-      [229] ldc #4
-        + Integer [67108864]
-      [231] ldc #4
-        + Integer [67108864]
-      [233] invokevirtual #102
-        + Methodref [android/view/Window.setFlags (II)V]
-      [236] aload_0 v0
-      [237] ldc #9
+      [192] aload_0 v0
+      [193] ldc #7
         + Integer [2130903041]
-      [239] invokevirtual #122
+      [195] invokevirtual #117
         + Methodref [com/kyler/mockup/SimpleMockup.setContentView (I)V]
-      [242] aload_0 v0
-      [243] aload_0 v0
-      [244] aload_0 v0
-      [245] invokevirtual #119
+      [198] aload_0 v0
+      [199] aload_0 v0
+      [200] aload_0 v0
+      [201] invokevirtual #115
         + Methodref [com/kyler/mockup/SimpleMockup.getTitle ()Ljava/lang/CharSequence;]
-      [248] dup_x1
-      [249] putfield #68
+      [204] dup_x1
+      [205] putfield #65
         + Fieldref [com/kyler/mockup/SimpleMockup.u Ljava/lang/CharSequence;]
-      [252] putfield #69
+      [208] putfield #66
         + Fieldref [com/kyler/mockup/SimpleMockup.v Ljava/lang/CharSequence;]
-      [255] aload_0 v0
-      [256] aload_0 v0
-      [257] invokevirtual #118
+      [211] aload_0 v0
+      [212] aload_0 v0
+      [213] invokevirtual #114
         + Methodref [com/kyler/mockup/SimpleMockup.getResources ()Landroid/content/res/Resources;]
-      [260] ldc #15
+      [216] ldc #13
         + Integer [2131099648]
-      [262] invokevirtual #82
+      [218] invokevirtual #79
         + Methodref [android/content/res/Resources.getStringArray (I)[Ljava/lang/String;]
-      [265] putfield #70
+      [221] putfield #67
         + Fieldref [com/kyler/mockup/SimpleMockup.w [Ljava/lang/String;]
-      [268] aload_0 v0
-      [269] aload_0 v0
-      [270] ldc #16
-        + Integer [2131296261]
-      [272] invokevirtual #112
+      [224] aload_0 v0
+      [225] aload_0 v0
+      [226] ldc #14
+        + Integer [2131296264]
+      [228] invokevirtual #108
         + Methodref [com/kyler/mockup/SimpleMockup.findViewById (I)Landroid/view/View;]
-      [275] checkcast #39
+      [231] checkcast #37
         + Class [android/support/v4/widget/DrawerLayout]
-      [278] putfield #65
+      [234] putfield #62
         + Fieldref [com/kyler/mockup/SimpleMockup.r Landroid/support/v4/widget/DrawerLayout;]
-      [281] aload_0 v0
-      [282] aload_0 v0
-      [283] ldc #19
-        + Integer [2131296265]
-      [285] invokevirtual #112
+      [237] aload_0 v0
+      [238] aload_0 v0
+      [239] ldc #17
+        + Integer [2131296268]
+      [241] invokevirtual #108
         + Methodref [com/kyler/mockup/SimpleMockup.findViewById (I)Landroid/view/View;]
-      [288] checkcast #48
+      [244] checkcast #45
         + Class [android/widget/ListView]
-      [291] putfield #66
+      [247] putfield #63
         + Fieldref [com/kyler/mockup/SimpleMockup.s Landroid/widget/ListView;]
-      [294] aload_0 v0
-      [295] getfield #65
+      [250] aload_0 v0
+      [251] getfield #62
         + Fieldref [com/kyler/mockup/SimpleMockup.r Landroid/support/v4/widget/DrawerLayout;]
-      [298] ldc #6
+      [254] ldc #4
         + Integer [2130837505]
-      [300] ldc #1
+      [256] ldc #1
         + Integer [8388611]
-      [302] invokevirtual #94
+      [258] invokevirtual #91
         + Methodref [android/support/v4/widget/DrawerLayout.a (II)V]
-      [305] aload_0 v0
-      [306] getfield #66
+      [261] aload_0 v0
+      [262] getfield #63
         + Fieldref [com/kyler/mockup/SimpleMockup.s Landroid/widget/ListView;]
-      [309] new #46
+      [265] new #43
         + Class [android/widget/ArrayAdapter]
-      [312] dup
-      [313] aload_0 v0
-      [314] ldc #10
+      [268] dup
+      [269] aload_0 v0
+      [270] ldc #8
         + Integer [2130903042]
-      [316] aload_0 v0
-      [317] getfield #70
+      [272] aload_0 v0
+      [273] getfield #67
         + Fieldref [com/kyler/mockup/SimpleMockup.w [Ljava/lang/String;]
-      [320] invokespecial #103
+      [276] invokespecial #99
         + Methodref [android/widget/ArrayAdapter.<init> (Landroid/content/Context;I[Ljava/lang/Object;)V]
-      [323] invokevirtual #107
+      [279] invokevirtual #103
         + Methodref [android/widget/ListView.setAdapter (Landroid/widget/ListAdapter;)V]
-      [326] aload_0 v0
-      [327] getfield #66
+      [282] aload_0 v0
+      [283] getfield #63
         + Fieldref [com/kyler/mockup/SimpleMockup.s Landroid/widget/ListView;]
-      [330] new #59
+      [286] new #57
         + Class [com/kyler/mockup/d]
-      [333] dup
-      [334] aload_0 v0
-      [335] aconst_null
-      [336] invokespecial #130
+      [289] dup
+      [290] aload_0 v0
+      [291] aconst_null
+      [292] invokespecial #125
         + Methodref [com/kyler/mockup/d.<init> (Lcom/kyler/mockup/SimpleMockup;Lcom/kyler/mockup/d;)V]
-      [339] invokevirtual #109
+      [295] invokevirtual #105
         + Methodref [android/widget/ListView.setOnItemClickListener (Landroid/widget/AdapterView$OnItemClickListener;)V]
-      [342] aload_0 v0
-      [343] invokevirtual #117
+      [298] aload_0 v0
+      [299] invokevirtual #113
         + Methodref [com/kyler/mockup/SimpleMockup.getLayoutInflater ()Landroid/view/LayoutInflater;]
-      [346] astore v6
-      [348] aload v6
-      [350] ldc #12
+      [302] astore v6
+      [304] aload v6
+      [306] ldc #10
         + Integer [2130903046]
-      [352] aload_0 v0
-      [353] getfield #66
+      [308] aload_0 v0
+      [309] getfield #63
         + Fieldref [com/kyler/mockup/SimpleMockup.s Landroid/widget/ListView;]
-      [356] iconst_0
-      [357] invokevirtual #101
+      [312] iconst_0
+      [313] invokevirtual #98
         + Methodref [android/view/LayoutInflater.inflate (ILandroid/view/ViewGroup;Z)Landroid/view/View;]
-      [360] checkcast #44
+      [316] checkcast #42
         + Class [android/view/ViewGroup]
-      [363] astore v7
-      [365] aload_0 v0
-      [366] getfield #66
+      [319] astore v7
+      [321] aload_0 v0
+      [322] getfield #63
         + Fieldref [com/kyler/mockup/SimpleMockup.s Landroid/widget/ListView;]
-      [369] aload v7
-      [371] aconst_null
-      [372] iconst_0
-      [373] invokevirtual #106
+      [325] aload v7
+      [327] aconst_null
+      [328] iconst_0
+      [329] invokevirtual #102
         + Methodref [android/widget/ListView.addHeaderView (Landroid/view/View;Ljava/lang/Object;Z)V]
-      [376] aload v6
-      [378] ldc #11
+      [332] aload v6
+      [334] ldc #9
         + Integer [2130903044]
-      [380] aload_0 v0
-      [381] getfield #66
+      [336] aload_0 v0
+      [337] getfield #63
         + Fieldref [com/kyler/mockup/SimpleMockup.s Landroid/widget/ListView;]
-      [384] iconst_0
-      [385] invokevirtual #101
+      [340] iconst_0
+      [341] invokevirtual #98
         + Methodref [android/view/LayoutInflater.inflate (ILandroid/view/ViewGroup;Z)Landroid/view/View;]
-      [388] checkcast #44
+      [344] checkcast #42
         + Class [android/view/ViewGroup]
-      [391] astore v8
-      [393] aload_0 v0
-      [394] getfield #66
+      [347] astore v8
+      [349] aload_0 v0
+      [350] getfield #63
         + Fieldref [com/kyler/mockup/SimpleMockup.s Landroid/widget/ListView;]
-      [397] aload v8
-      [399] aconst_null
-      [400] iconst_1
-      [401] invokevirtual #105
+      [353] aload v8
+      [355] aconst_null
+      [356] iconst_1
+      [357] invokevirtual #101
         + Methodref [android/widget/ListView.addFooterView (Landroid/view/View;Ljava/lang/Object;Z)V]
-      [404] aload_0 v0
-      [405] new #58
+      [360] aload_0 v0
+      [361] new #56
         + Class [com/kyler/mockup/c]
-      [408] dup
-      [409] aload_0 v0
-      [410] aload_0 v0
-      [411] aload_0 v0
-      [412] getfield #65
+      [364] dup
+      [365] aload_0 v0
+      [366] aload_0 v0
+      [367] aload_0 v0
+      [368] getfield #62
         + Fieldref [com/kyler/mockup/SimpleMockup.r Landroid/support/v4/widget/DrawerLayout;]
-      [415] ldc #8
+      [371] ldc #6
         + Integer [2130837515]
-      [417] ldc #21
+      [373] ldc #19
         + Integer [2131361794]
-      [419] ldc #22
+      [375] ldc #20
         + Integer [2131361795]
-      [421] invokespecial #129
+      [377] invokespecial #124
         + Methodref [com/kyler/mockup/c.<init> (Lcom/kyler/mockup/SimpleMockup;Landroid/app/Activity;Landroid/support/v4/widget/DrawerLayout;III)V]
-      [424] putfield #67
+      [380] putfield #64
         + Fieldref [com/kyler/mockup/SimpleMockup.t Landroid/support/v4/app/a;]
-      [427] aload_0 v0
-      [428] getfield #65
+      [383] aload_0 v0
+      [384] getfield #62
         + Fieldref [com/kyler/mockup/SimpleMockup.r Landroid/support/v4/widget/DrawerLayout;]
-      [431] aload_0 v0
-      [432] getfield #67
+      [387] aload_0 v0
+      [388] getfield #64
         + Fieldref [com/kyler/mockup/SimpleMockup.t Landroid/support/v4/app/a;]
-      [435] invokevirtual #96
+      [391] invokevirtual #93
         + Methodref [android/support/v4/widget/DrawerLayout.setDrawerListener (Landroid/support/v4/widget/c;)V]
-      [438] aload_1 v1
-      [439] ifnonnull +8 (target=447)
-      [442] aload_0 v0
-      [443] iconst_0
-      [444] invokespecial #110
+      [394] aload_1 v1
+      [395] ifnonnull +8 (target=403)
+      [398] aload_0 v0
+      [399] iconst_0
+      [400] invokespecial #106
         + Methodref [com/kyler/mockup/SimpleMockup.a (I)V]
-      [447] aload_0 v0
-      [448] ldc #17
-        + Integer [2131296262]
-      [450] invokevirtual #112
+      [403] aload_0 v0
+      [404] ldc #15
+        + Integer [2131296265]
+      [406] invokevirtual #108
         + Methodref [com/kyler/mockup/SimpleMockup.findViewById (I)Landroid/view/View;]
-      [453] checkcast #38
+      [409] checkcast #36
         + Class [android/support/v4/view/ViewPager]
-      [456] astore v9
-      [458] aload v9
-      [460] new #50
+      [412] astore v9
+      [414] aload v9
+      [416] new #47
         + Class [com/kyler/mockup/a/a]
-      [463] dup
-      [464] aload_0 v0
-      [465] invokevirtual #111
+      [419] dup
+      [420] aload_0 v0
+      [421] invokevirtual #107
         + Methodref [com/kyler/mockup/SimpleMockup.e ()Landroid/support/v4/app/z;]
-      [468] invokespecial #124
+      [424] invokespecial #119
         + Methodref [com/kyler/mockup/a/a.<init> (Landroid/support/v4/app/z;)V]
-      [471] invokevirtual #93
+      [427] invokevirtual #90
         + Methodref [android/support/v4/view/ViewPager.setAdapter (Landroid/support/v4/view/ae;)V]
-      [474] return
+      [430] return
       Code attribute exceptions (count = 0):
       Code attribute attributes (attribute count = 1):
-      + Stack map table attribute (count = 4):
+      + Stack map table attribute (count = 3):
         - [27] Var: ...[a:android/content/SharedPreferences], Stack: (empty)
         - [93] Var: ..., Stack: (empty)
-        - [236] Var: ...[a:android/app/ActionBar][a:android/text/SpannableString][a:android/widget/ImageView], Stack: (empty)
-        - [447] Var: ...[a:android/view/LayoutInflater][a:android/view/ViewGroup][a:android/view/ViewGroup], Stack: (empty)
+        - [403] Var: [a:com/kyler/mockup/SimpleMockup][a:android/os/Bundle][a:android/content/SharedPreferences][a:android/app/ActionBar][a:android/text/SpannableString][a:android/widget/ImageView][a:android/view/LayoutInflater][a:android/view/ViewGroup][a:android/view/ViewGroup], Stack: 
     + Runtime invisible annotations attribute:
       - Annotation [Landroid/annotation/SuppressLint;]:
         - Array element value [value]:
@@ -71232,7 +71187,7 @@ Methods (count = 9):
     + Code attribute instructions (code length = 6, locals = 2, stack = 2):
       [0] aload_0 v0
       [1] aload_1 v1
-      [2] invokespecial #90
+      [2] invokespecial #87
         + Methodref [android/support/v4/app/t.onCreateOptionsMenu (Landroid/view/Menu;)Z]
       [5] ireturn
       Code attribute exceptions (count = 0):
@@ -71243,21 +71198,21 @@ Methods (count = 9):
     Class member attributes (count = 1):
     + Code attribute instructions (code length = 26, locals = 2, stack = 2):
       [0] aload_0 v0
-      [1] getfield #67
+      [1] getfield #64
         + Fieldref [com/kyler/mockup/SimpleMockup.t Landroid/support/v4/app/a;]
       [4] aload_1 v1
-      [5] invokevirtual #86
+      [5] invokevirtual #83
         + Methodref [android/support/v4/app/a.a (Landroid/view/MenuItem;)Z]
       [8] ifeq +5 (target=13)
       [11] iconst_1
       [12] ireturn
       [13] aload_1 v1
-      [14] invokeinterface #135
+      [14] invokeinterface #130
         + InterfaceMethodref [android/view/MenuItem.getItemId ()I]
       [19] pop
       [20] aload_0 v0
       [21] aload_1 v1
-      [22] invokespecial #91
+      [22] invokespecial #88
         + Methodref [android/support/v4/app/t.onOptionsItemSelected (Landroid/view/MenuItem;)Z]
       [25] ireturn
       Code attribute exceptions (count = 0):
@@ -71268,124 +71223,135 @@ Methods (count = 9):
     Access flags: 0x2
       = private void a(int)
     Class member attributes (count = 1):
-    + Code attribute instructions (code length = 172, locals = 5, stack = 4):
+    + Code attribute instructions (code length = 187, locals = 6, stack = 4):
       [0] aload_0 v0
-      [1] invokevirtual #115
+      [1] invokevirtual #111
         + Methodref [com/kyler/mockup/SimpleMockup.getFragmentManager ()Landroid/app/FragmentManager;]
-      [4] invokevirtual #76
+      [4] invokevirtual #73
         + Methodref [android/app/FragmentManager.beginTransaction ()Landroid/app/FragmentTransaction;]
       [7] astore_2 v2
       [8] iload_1 v1
-      [9] tableswitch (6 offsets, default=137) (target=146)
+      [9] tableswitch (6 offsets, default=152) (target=161)
         0: offset = 39, target = 48
         1: offset = 42, target = 51
         2: offset = 69, target = 78
-        3: offset = 83, target = 92
-        4: offset = 97, target = 106
-        5: offset = 111, target = 120
-        default: offset = 137, target = 146
-      [48] goto +98 (target=146)
-      [51] new #30
+        3: offset = 98, target = 107
+        4: offset = 112, target = 121
+        5: offset = 126, target = 135
+        default: offset = 152, target = 161
+      [48] goto +113 (target=161)
+      [51] new #28
         + Class [android/content/Intent]
       [54] dup
       [55] aload_0 v0
-      [56] ldc #53
+      [56] ldc #50
         + Class [com/kyler/mockup/activities/RequestByEmail]
-      [58] invokespecial #79
+      [58] invokespecial #76
         + Methodref [android/content/Intent.<init> (Landroid/content/Context;Ljava/lang/Class;)V]
       [61] astore_3 v3
       [62] aload_0 v0
       [63] aload_3 v3
-      [64] invokevirtual #123
+      [64] invokevirtual #118
         + Methodref [com/kyler/mockup/SimpleMockup.startActivity (Landroid/content/Intent;)V]
       [67] aload_0 v0
-      [68] ldc #13
+      [68] ldc #11
         + Integer [2130968576]
-      [70] ldc #14
+      [70] ldc #12
         + Integer [2130968577]
-      [72] invokevirtual #121
+      [72] invokevirtual #116
         + Methodref [com/kyler/mockup/SimpleMockup.overridePendingTransition (II)V]
-      [75] goto +71 (target=146)
-      [78] aload_2 v2
-      [79] ldc #18
-        + Integer [2131296264]
-      [81] aload_0 v0
-      [82] getfield #62
-        + Fieldref [com/kyler/mockup/SimpleMockup.o Landroid/app/Fragment;]
-      [85] invokevirtual #78
-        + Methodref [android/app/FragmentTransaction.replace (ILandroid/app/Fragment;)Landroid/app/FragmentTransaction;]
-      [88] pop
-      [89] goto +57 (target=146)
-      [92] aload_2 v2
-      [93] ldc #18
-        + Integer [2131296264]
-      [95] aload_0 v0
-      [96] getfield #63
-        + Fieldref [com/kyler/mockup/SimpleMockup.p Landroid/app/Fragment;]
-      [99] invokevirtual #78
-        + Methodref [android/app/FragmentTransaction.replace (ILandroid/app/Fragment;)Landroid/app/FragmentTransaction;]
-      [102] pop
-      [103] goto +43 (target=146)
-      [106] aload_2 v2
-      [107] ldc #18
-        + Integer [2131296264]
-      [109] aload_0 v0
-      [110] getfield #64
-        + Fieldref [com/kyler/mockup/SimpleMockup.q Landroid/app/Fragment;]
-      [113] invokevirtual #78
-        + Methodref [android/app/FragmentTransaction.replace (ILandroid/app/Fragment;)Landroid/app/FragmentTransaction;]
-      [116] pop
-      [117] goto +29 (target=146)
-      [120] new #30
+      [75] goto +86 (target=161)
+      [78] new #28
         + Class [android/content/Intent]
-      [123] dup
-      [124] aload_0 v0
-      [125] ldc #51
-        + Class [com/kyler/mockup/activities/About]
-      [127] invokespecial #79
+      [81] dup
+      [82] aload_0 v0
+      [83] ldc #51
+        + Class [com/kyler/mockup/activities/TranslucentExample]
+      [85] invokespecial #76
         + Methodref [android/content/Intent.<init> (Landroid/content/Context;Ljava/lang/Class;)V]
-      [130] astore v4
-      [132] aload_0 v0
-      [133] aload v4
-      [135] invokevirtual #123
+      [88] astore v4
+      [90] aload_0 v0
+      [91] aload v4
+      [93] invokevirtual #118
         + Methodref [com/kyler/mockup/SimpleMockup.startActivity (Landroid/content/Intent;)V]
-      [138] aload_0 v0
-      [139] ldc #13
+      [96] aload_0 v0
+      [97] ldc #11
         + Integer [2130968576]
-      [141] ldc #14
+      [99] ldc #12
         + Integer [2130968577]
-      [143] invokevirtual #121
+      [101] invokevirtual #116
         + Methodref [com/kyler/mockup/SimpleMockup.overridePendingTransition (II)V]
-      [146] aload_2 v2
-      [147] invokevirtual #77
+      [104] goto +57 (target=161)
+      [107] aload_2 v2
+      [108] ldc #16
+        + Integer [2131296267]
+      [110] aload_0 v0
+      [111] getfield #60
+        + Fieldref [com/kyler/mockup/SimpleMockup.p Landroid/app/Fragment;]
+      [114] invokevirtual #75
+        + Methodref [android/app/FragmentTransaction.replace (ILandroid/app/Fragment;)Landroid/app/FragmentTransaction;]
+      [117] pop
+      [118] goto +43 (target=161)
+      [121] aload_2 v2
+      [122] ldc #16
+        + Integer [2131296267]
+      [124] aload_0 v0
+      [125] getfield #61
+        + Fieldref [com/kyler/mockup/SimpleMockup.q Landroid/app/Fragment;]
+      [128] invokevirtual #75
+        + Methodref [android/app/FragmentTransaction.replace (ILandroid/app/Fragment;)Landroid/app/FragmentTransaction;]
+      [131] pop
+      [132] goto +29 (target=161)
+      [135] new #28
+        + Class [android/content/Intent]
+      [138] dup
+      [139] aload_0 v0
+      [140] ldc #48
+        + Class [com/kyler/mockup/activities/About]
+      [142] invokespecial #76
+        + Methodref [android/content/Intent.<init> (Landroid/content/Context;Ljava/lang/Class;)V]
+      [145] astore v5
+      [147] aload_0 v0
+      [148] aload v5
+      [150] invokevirtual #118
+        + Methodref [com/kyler/mockup/SimpleMockup.startActivity (Landroid/content/Intent;)V]
+      [153] aload_0 v0
+      [154] ldc #11
+        + Integer [2130968576]
+      [156] ldc #12
+        + Integer [2130968577]
+      [158] invokevirtual #116
+        + Methodref [com/kyler/mockup/SimpleMockup.overridePendingTransition (II)V]
+      [161] aload_2 v2
+      [162] invokevirtual #74
         + Methodref [android/app/FragmentTransaction.commit ()I]
-      [150] pop
-      [151] aload_0 v0
-      [152] getfield #66
+      [165] pop
+      [166] aload_0 v0
+      [167] getfield #63
         + Fieldref [com/kyler/mockup/SimpleMockup.s Landroid/widget/ListView;]
-      [155] iload_1 v1
-      [156] iconst_1
-      [157] invokevirtual #108
+      [170] iload_1 v1
+      [171] iconst_1
+      [172] invokevirtual #104
         + Methodref [android/widget/ListView.setItemChecked (IZ)V]
-      [160] aload_0 v0
-      [161] getfield #65
+      [175] aload_0 v0
+      [176] getfield #62
         + Fieldref [com/kyler/mockup/SimpleMockup.r Landroid/support/v4/widget/DrawerLayout;]
-      [164] aload_0 v0
-      [165] getfield #66
+      [179] aload_0 v0
+      [180] getfield #63
         + Fieldref [com/kyler/mockup/SimpleMockup.s Landroid/widget/ListView;]
-      [168] invokevirtual #95
+      [183] invokevirtual #92
         + Methodref [android/support/v4/widget/DrawerLayout.i (Landroid/view/View;)V]
-      [171] return
+      [186] return
       Code attribute exceptions (count = 0):
       Code attribute attributes (attribute count = 1):
       + Stack map table attribute (count = 7):
         - [48] Var: ...[a:android/app/FragmentTransaction], Stack: (empty)
         - [51] Var: ..., Stack: (empty)
         - [78] Var: ..., Stack: (empty)
-        - [92] Var: ..., Stack: (empty)
-        - [106] Var: ..., Stack: (empty)
-        - [120] Var: ..., Stack: (empty)
-        - [146] Var: ..., Stack: (empty)
+        - [107] Var: ..., Stack: (empty)
+        - [121] Var: ..., Stack: (empty)
+        - [135] Var: ..., Stack: (empty)
+        - [161] Var: ..., Stack: (empty)
   + Method:       setTitle(Ljava/lang/CharSequence;)V
     Access flags: 0x1
       = public void setTitle(java.lang.CharSequence)
@@ -71393,15 +71359,15 @@ Methods (count = 9):
     + Code attribute instructions (code length = 17, locals = 2, stack = 2):
       [0] aload_0 v0
       [1] aload_1 v1
-      [2] putfield #69
+      [2] putfield #66
         + Fieldref [com/kyler/mockup/SimpleMockup.v Ljava/lang/CharSequence;]
       [5] aload_0 v0
-      [6] invokevirtual #114
+      [6] invokevirtual #110
         + Methodref [com/kyler/mockup/SimpleMockup.getActionBar ()Landroid/app/ActionBar;]
       [9] aload_0 v0
-      [10] getfield #69
+      [10] getfield #66
         + Fieldref [com/kyler/mockup/SimpleMockup.v Ljava/lang/CharSequence;]
-      [13] invokevirtual #75
+      [13] invokevirtual #72
         + Methodref [android/app/ActionBar.setTitle (Ljava/lang/CharSequence;)V]
       [16] return
       Code attribute exceptions (count = 0):
@@ -71413,12 +71379,12 @@ Methods (count = 9):
     + Code attribute instructions (code length = 13, locals = 2, stack = 2):
       [0] aload_0 v0
       [1] aload_1 v1
-      [2] invokespecial #92
+      [2] invokespecial #89
         + Methodref [android/support/v4/app/t.onPostCreate (Landroid/os/Bundle;)V]
       [5] aload_0 v0
-      [6] getfield #67
+      [6] getfield #64
         + Fieldref [com/kyler/mockup/SimpleMockup.t Landroid/support/v4/app/a;]
-      [9] invokevirtual #84
+      [9] invokevirtual #81
         + Methodref [android/support/v4/app/a.a ()V]
       [12] return
       Code attribute exceptions (count = 0):
@@ -71430,13 +71396,13 @@ Methods (count = 9):
     + Code attribute instructions (code length = 14, locals = 2, stack = 2):
       [0] aload_0 v0
       [1] aload_1 v1
-      [2] invokespecial #88
+      [2] invokespecial #85
         + Methodref [android/support/v4/app/t.onConfigurationChanged (Landroid/content/res/Configuration;)V]
       [5] aload_0 v0
-      [6] getfield #67
+      [6] getfield #64
         + Fieldref [com/kyler/mockup/SimpleMockup.t Landroid/support/v4/app/a;]
       [9] aload_1 v1
-      [10] invokevirtual #85
+      [10] invokevirtual #82
         + Methodref [android/support/v4/app/a.a (Landroid/content/res/Configuration;)V]
       [13] return
       Code attribute exceptions (count = 0):
@@ -71448,7 +71414,7 @@ Methods (count = 9):
     + Code attribute instructions (code length = 6, locals = 2, stack = 2):
       [0] aload_0 v0
       [1] iload_1 v1
-      [2] invokespecial #110
+      [2] invokespecial #106
         + Methodref [com/kyler/mockup/SimpleMockup.a (I)V]
       [5] return
       Code attribute exceptions (count = 0):
@@ -71695,22 +71661,18 @@ _____________________________________________________________________
 
 Interfaces (count = 0):
 
-Constant Pool (count = 99):
+Constant Pool (count = 82):
   + Integer [19]
-  + Integer [67108864]
   + Integer [2130837515]
   + Integer [2130903040]
   + String []
   + String [sans-serif-thin]
   + Class [android/app/ActionBar]
   + Class [android/app/Activity]
-  + Class [android/os/Build$VERSION]
   + Class [android/text/SpannableString]
   + Class [android/text/style/TypefaceSpan]
   + Class [android/view/MenuItem]
-  + Class [android/view/Window]
   + Class [com/kyler/mockup/activities/About]
-  + Fieldref [android/os/Build$VERSION.SDK_INT I]
   + Methodref [android/app/ActionBar.setDisplayHomeAsUpEnabled (Z)V]
   + Methodref [android/app/ActionBar.setHomeButtonEnabled (Z)V]
   + Methodref [android/app/ActionBar.setIcon (I)V]
@@ -71724,18 +71686,14 @@ Constant Pool (count = 99):
   + Methodref [android/text/SpannableString.length ()I]
   + Methodref [android/text/SpannableString.setSpan (Ljava/lang/Object;III)V]
   + Methodref [android/text/style/TypefaceSpan.<init> (Ljava/lang/String;)V]
-  + Methodref [android/view/Window.setFlags (II)V]
   + Methodref [com/kyler/mockup/activities/About.getActionBar ()Landroid/app/ActionBar;]
-  + Methodref [com/kyler/mockup/activities/About.getWindow ()Landroid/view/Window;]
   + Methodref [com/kyler/mockup/activities/About.setContentView (I)V]
   + InterfaceMethodref [android/view/MenuItem.getItemId ()I]
   + NameAndType [<init> ()V]
   + NameAndType [<init> (Ljava/lang/CharSequence;)V]
   + NameAndType [<init> (Ljava/lang/String;)V]
-  + NameAndType [SDK_INT I]
   + NameAndType [getActionBar ()Landroid/app/ActionBar;]
   + NameAndType [getItemId ()I]
-  + NameAndType [getWindow ()Landroid/view/Window;]
   + NameAndType [length ()I]
   + NameAndType [onBackPressed ()V]
   + NameAndType [onCreate (Landroid/os/Bundle;)V]
@@ -71743,7 +71701,6 @@ Constant Pool (count = 99):
   + NameAndType [onOptionsItemSelected (Landroid/view/MenuItem;)Z]
   + NameAndType [setContentView (I)V]
   + NameAndType [setDisplayHomeAsUpEnabled (Z)V]
-  + NameAndType [setFlags (II)V]
   + NameAndType [setHomeButtonEnabled (Z)V]
   + NameAndType [setIcon (I)V]
   + NameAndType [setSpan (Ljava/lang/Object;III)V]
@@ -71751,10 +71708,8 @@ Constant Pool (count = 99):
   + Utf8 []
   + Utf8 [()I]
   + Utf8 [()Landroid/app/ActionBar;]
-  + Utf8 [()Landroid/view/Window;]
   + Utf8 [()V]
   + Utf8 [(I)V]
-  + Utf8 [(II)V]
   + Utf8 [(Landroid/os/Bundle;)V]
   + Utf8 [(Landroid/view/Menu;)Z]
   + Utf8 [(Landroid/view/MenuItem;)Z]
@@ -71764,22 +71719,17 @@ Constant Pool (count = 99):
   + Utf8 [(Z)V]
   + Utf8 [<init>]
   + Utf8 [Code]
-  + Utf8 [I]
   + Utf8 [Landroid/annotation/TargetApi;]
   + Utf8 [RuntimeInvisibleAnnotations]
-  + Utf8 [SDK_INT]
   + Utf8 [StackMapTable]
   + Utf8 [android/app/ActionBar]
   + Utf8 [android/app/Activity]
-  + Utf8 [android/os/Build$VERSION]
   + Utf8 [android/text/SpannableString]
   + Utf8 [android/text/style/TypefaceSpan]
   + Utf8 [android/view/MenuItem]
-  + Utf8 [android/view/Window]
   + Utf8 [com/kyler/mockup/activities/About]
   + Utf8 [getActionBar]
   + Utf8 [getItemId]
-  + Utf8 [getWindow]
   + Utf8 [length]
   + Utf8 [onBackPressed]
   + Utf8 [onCreate]
@@ -71788,7 +71738,6 @@ Constant Pool (count = 99):
   + Utf8 [sans-serif-thin]
   + Utf8 [setContentView]
   + Utf8 [setDisplayHomeAsUpEnabled]
-  + Utf8 [setFlags]
   + Utf8 [setHomeButtonEnabled]
   + Utf8 [setIcon]
   + Utf8 [setSpan]
@@ -71804,7 +71753,7 @@ Methods (count = 4):
     Class member attributes (count = 1):
     + Code attribute instructions (code length = 5, locals = 1, stack = 1):
       [0] aload_0 v0
-      [1] invokespecial #20
+      [1] invokespecial #16
         + Methodref [android/app/Activity.<init> ()V]
       [4] return
       Code attribute exceptions (count = 0):
@@ -71813,86 +71762,69 @@ Methods (count = 4):
     Access flags: 0x4
       = protected void onCreate(android.os.Bundle)
     Class member attributes (count = 2):
-    + Code attribute instructions (code length = 100, locals = 5, stack = 5):
+    + Code attribute instructions (code length = 77, locals = 4, stack = 5):
       [0] aload_0 v0
       [1] aload_1 v1
-      [2] invokespecial #22
+      [2] invokespecial #18
         + Methodref [android/app/Activity.onCreate (Landroid/os/Bundle;)V]
       [5] aload_0 v0
-      [6] invokevirtual #30
+      [6] invokevirtual #25
         + Methodref [com/kyler/mockup/activities/About.getActionBar ()Landroid/app/ActionBar;]
       [9] astore_2 v2
       [10] aload_0 v0
-      [11] invokevirtual #30
+      [11] invokevirtual #25
         + Methodref [com/kyler/mockup/activities/About.getActionBar ()Landroid/app/ActionBar;]
-      [14] ldc #3
+      [14] ldc #2
         + Integer [2130837515]
-      [16] invokevirtual #18
+      [16] invokevirtual #14
         + Methodref [android/app/ActionBar.setIcon (I)V]
-      [19] new #10
+      [19] new #8
         + Class [android/text/SpannableString]
       [22] dup
-      [23] ldc #5
+      [23] ldc #4
         + String []
-      [25] invokespecial #25
+      [25] invokespecial #21
         + Methodref [android/text/SpannableString.<init> (Ljava/lang/CharSequence;)V]
       [28] astore_3 v3
       [29] aload_3 v3
-      [30] new #11
+      [30] new #9
         + Class [android/text/style/TypefaceSpan]
       [33] dup
-      [34] ldc #6
+      [34] ldc #5
         + String [sans-serif-thin]
-      [36] invokespecial #28
+      [36] invokespecial #24
         + Methodref [android/text/style/TypefaceSpan.<init> (Ljava/lang/String;)V]
       [39] iconst_0
       [40] aload_3 v3
-      [41] invokevirtual #26
+      [41] invokevirtual #22
         + Methodref [android/text/SpannableString.length ()I]
       [44] bipush 33
-      [46] invokevirtual #27
+      [46] invokevirtual #23
         + Methodref [android/text/SpannableString.setSpan (Ljava/lang/Object;III)V]
       [49] aload_2 v2
       [50] aload_3 v3
-      [51] invokevirtual #19
+      [51] invokevirtual #15
         + Methodref [android/app/ActionBar.setTitle (Ljava/lang/CharSequence;)V]
       [54] aload_0 v0
-      [55] invokevirtual #30
+      [55] invokevirtual #25
         + Methodref [com/kyler/mockup/activities/About.getActionBar ()Landroid/app/ActionBar;]
       [58] iconst_1
-      [59] invokevirtual #16
+      [59] invokevirtual #12
         + Methodref [android/app/ActionBar.setDisplayHomeAsUpEnabled (Z)V]
       [62] aload_0 v0
-      [63] invokevirtual #30
+      [63] invokevirtual #25
         + Methodref [com/kyler/mockup/activities/About.getActionBar ()Landroid/app/ActionBar;]
       [66] iconst_1
-      [67] invokevirtual #17
+      [67] invokevirtual #13
         + Methodref [android/app/ActionBar.setHomeButtonEnabled (Z)V]
-      [70] getstatic #15
-        + Fieldref [android/os/Build$VERSION.SDK_INT I]
-      [73] bipush 19
-      [75] ificmplt +18 (target=93)
-      [78] aload_0 v0
-      [79] invokevirtual #31
-        + Methodref [com/kyler/mockup/activities/About.getWindow ()Landroid/view/Window;]
-      [82] astore v4
-      [84] aload v4
-      [86] ldc #2
-        + Integer [67108864]
-      [88] ldc #2
-        + Integer [67108864]
-      [90] invokevirtual #29
-        + Methodref [android/view/Window.setFlags (II)V]
-      [93] aload_0 v0
-      [94] ldc #4
+      [70] aload_0 v0
+      [71] ldc #3
         + Integer [2130903040]
-      [96] invokevirtual #32
+      [73] invokevirtual #26
         + Methodref [com/kyler/mockup/activities/About.setContentView (I)V]
-      [99] return
+      [76] return
       Code attribute exceptions (count = 0):
-      Code attribute attributes (attribute count = 1):
-      + Stack map table attribute (count = 1):
-        - [93] Var: ...[a:android/app/ActionBar][a:android/text/SpannableString], Stack: (empty)
+      Code attribute attributes (attribute count = 0):
     + Runtime invisible annotations attribute:
       - Annotation [Landroid/annotation/TargetApi;]:
         - Constant element value [value '73']
@@ -71904,7 +71836,7 @@ Methods (count = 4):
     + Code attribute instructions (code length = 6, locals = 2, stack = 2):
       [0] aload_0 v0
       [1] aload_1 v1
-      [2] invokespecial #23
+      [2] invokespecial #19
         + Methodref [android/app/Activity.onCreateOptionsMenu (Landroid/view/Menu;)Z]
       [5] ireturn
       Code attribute exceptions (count = 0):
@@ -71915,17 +71847,17 @@ Methods (count = 4):
     Class member attributes (count = 1):
     + Code attribute instructions (code length = 34, locals = 2, stack = 2):
       [0] aload_1 v1
-      [1] invokeinterface #33
+      [1] invokeinterface #27
         + InterfaceMethodref [android/view/MenuItem.getItemId ()I]
       [6] tableswitch (1 offsets, default=22) (target=28)
         16908332: offset = 18, target = 24
         default: offset = 22, target = 28
       [24] aload_0 v0
-      [25] invokespecial #21
+      [25] invokespecial #17
         + Methodref [android/app/Activity.onBackPressed ()V]
       [28] aload_0 v0
       [29] aload_1 v1
-      [30] invokespecial #24
+      [30] invokespecial #20
         + Methodref [android/app/Activity.onOptionsItemSelected (Landroid/view/MenuItem;)Z]
       [33] ireturn
       Code attribute exceptions (count = 0):
@@ -72231,18 +72163,16 @@ _____________________________________________________________________
 
 Interfaces (count = 0):
 
-Constant Pool (count = 221):
+Constant Pool (count = 204):
   + Integer [19]
-  + Integer [67108864]
-  + Integer [134217728]
   + Integer [2130837515]
   + Integer [2130903047]
   + Integer [2130968576]
   + Integer [2130968577]
   + Integer [2131296256]
-  + Integer [2131296277]
-  + Integer [2131296280]
-  + Integer [2131296282]
+  + Integer [2131296278]
+  + Integer [2131296281]
+  + Integer [2131296283]
   + Integer [2131492864]
   + String [No email client installed.]
   + String [Please choose an Email Client]
@@ -72260,20 +72190,17 @@ Constant Pool (count = 221):
   + Class [android/content/ActivityNotFoundException]
   + Class [android/content/Intent]
   + Class [android/net/Uri]
-  + Class [android/os/Build$VERSION]
   + Class [android/text/Editable]
   + Class [android/text/SpannableString]
   + Class [android/text/style/TypefaceSpan]
   + Class [android/view/MenuInflater]
   + Class [android/view/MenuItem]
-  + Class [android/view/Window]
   + Class [android/widget/Button]
   + Class [android/widget/EditText]
   + Class [android/widget/Toast]
   + Class [com/kyler/mockup/activities/RequestByEmail]
   + Class [com/kyler/mockup/activities/b]
   + Class [java/lang/String]
-  + Fieldref [android/os/Build$VERSION.SDK_INT I]
   + Fieldref [com/kyler/mockup/activities/RequestByEmail.a Landroid/widget/EditText;]
   + Fieldref [com/kyler/mockup/activities/RequestByEmail.b Landroid/widget/EditText;]
   + Fieldref [com/kyler/mockup/activities/RequestByEmail.c Landroid/widget/EditText;]
@@ -72297,7 +72224,6 @@ Constant Pool (count = 221):
   + Methodref [android/text/SpannableString.setSpan (Ljava/lang/Object;III)V]
   + Methodref [android/text/style/TypefaceSpan.<init> (Ljava/lang/String;)V]
   + Methodref [android/view/MenuInflater.inflate (ILandroid/view/Menu;)V]
-  + Methodref [android/view/Window.setFlags (II)V]
   + Methodref [android/widget/Button.setOnClickListener (Landroid/view/View$OnClickListener;)V]
   + Methodref [android/widget/EditText.getText ()Landroid/text/Editable;]
   + Methodref [android/widget/Toast.makeText (Landroid/content/Context;Ljava/lang/CharSequence;I)Landroid/widget/Toast;]
@@ -72305,7 +72231,6 @@ Constant Pool (count = 221):
   + Methodref [com/kyler/mockup/activities/RequestByEmail.findViewById (I)Landroid/view/View;]
   + Methodref [com/kyler/mockup/activities/RequestByEmail.getActionBar ()Landroid/app/ActionBar;]
   + Methodref [com/kyler/mockup/activities/RequestByEmail.getMenuInflater ()Landroid/view/MenuInflater;]
-  + Methodref [com/kyler/mockup/activities/RequestByEmail.getWindow ()Landroid/view/Window;]
   + Methodref [com/kyler/mockup/activities/RequestByEmail.overridePendingTransition (II)V]
   + Methodref [com/kyler/mockup/activities/RequestByEmail.setContentView (I)V]
   + Methodref [com/kyler/mockup/activities/RequestByEmail.startActivity (Landroid/content/Intent;)V]
@@ -72317,7 +72242,6 @@ Constant Pool (count = 221):
   + NameAndType [<init> (Ljava/lang/CharSequence;)V]
   + NameAndType [<init> (Ljava/lang/String;)V]
   + NameAndType [<init> (Ljava/lang/String;Landroid/net/Uri;)V]
-  + NameAndType [SDK_INT I]
   + NameAndType [a Landroid/widget/EditText;]
   + NameAndType [b Landroid/widget/EditText;]
   + NameAndType [c Landroid/widget/EditText;]
@@ -72327,7 +72251,6 @@ Constant Pool (count = 221):
   + NameAndType [getItemId ()I]
   + NameAndType [getMenuInflater ()Landroid/view/MenuInflater;]
   + NameAndType [getText ()Landroid/text/Editable;]
-  + NameAndType [getWindow ()Landroid/view/Window;]
   + NameAndType [inflate (ILandroid/view/Menu;)V]
   + NameAndType [length ()I]
   + NameAndType [makeText (Landroid/content/Context;Ljava/lang/CharSequence;I)Landroid/widget/Toast;]
@@ -72341,7 +72264,6 @@ Constant Pool (count = 221):
   + NameAndType [putExtra (Ljava/lang/String;[Ljava/lang/String;)Landroid/content/Intent;]
   + NameAndType [setContentView (I)V]
   + NameAndType [setDisplayHomeAsUpEnabled (Z)V]
-  + NameAndType [setFlags (II)V]
   + NameAndType [setHomeButtonEnabled (Z)V]
   + NameAndType [setIcon (I)V]
   + NameAndType [setOnClickListener (Landroid/view/View$OnClickListener;)V]
@@ -72355,7 +72277,6 @@ Constant Pool (count = 221):
   + Utf8 [()Landroid/app/ActionBar;]
   + Utf8 [()Landroid/text/Editable;]
   + Utf8 [()Landroid/view/MenuInflater;]
-  + Utf8 [()Landroid/view/Window;]
   + Utf8 [()Ljava/lang/String;]
   + Utf8 [()V]
   + Utf8 [(I)Landroid/view/View;]
@@ -72382,7 +72303,6 @@ Constant Pool (count = 221):
   + Utf8 [(Z)V]
   + Utf8 [<init>]
   + Utf8 [Code]
-  + Utf8 [I]
   + Utf8 [InflateParams]
   + Utf8 [Landroid/annotation/SuppressLint;]
   + Utf8 [Landroid/annotation/TargetApi;]
@@ -72391,7 +72311,6 @@ Constant Pool (count = 221):
   + Utf8 [Please choose an Email Client]
   + Utf8 [Request]
   + Utf8 [RuntimeInvisibleAnnotations]
-  + Utf8 [SDK_INT]
   + Utf8 [StackMapTable]
   + Utf8 [[Ljava/lang/String;]
   + Utf8 [a]
@@ -72404,13 +72323,11 @@ Constant Pool (count = 221):
   + Utf8 [android/content/ActivityNotFoundException]
   + Utf8 [android/content/Intent]
   + Utf8 [android/net/Uri]
-  + Utf8 [android/os/Build$VERSION]
   + Utf8 [android/text/Editable]
   + Utf8 [android/text/SpannableString]
   + Utf8 [android/text/style/TypefaceSpan]
   + Utf8 [android/view/MenuInflater]
   + Utf8 [android/view/MenuItem]
-  + Utf8 [android/view/Window]
   + Utf8 [android/widget/Button]
   + Utf8 [android/widget/EditText]
   + Utf8 [android/widget/Toast]
@@ -72424,7 +72341,6 @@ Constant Pool (count = 221):
   + Utf8 [getItemId]
   + Utf8 [getMenuInflater]
   + Utf8 [getText]
-  + Utf8 [getWindow]
   + Utf8 [inflate]
   + Utf8 [java/lang/String]
   + Utf8 [length]
@@ -72441,7 +72357,6 @@ Constant Pool (count = 221):
   + Utf8 [sans-serif-thin]
   + Utf8 [setContentView]
   + Utf8 [setDisplayHomeAsUpEnabled]
-  + Utf8 [setFlags]
   + Utf8 [setHomeButtonEnabled]
   + Utf8 [setIcon]
   + Utf8 [setOnClickListener]
@@ -72471,7 +72386,7 @@ Methods (count = 8):
     Class member attributes (count = 1):
     + Code attribute instructions (code length = 5, locals = 1, stack = 1):
       [0] aload_0 v0
-      [1] invokespecial #50
+      [1] invokespecial #45
         + Methodref [android/app/Activity.<init> ()V]
       [4] return
       Code attribute exceptions (count = 0):
@@ -72480,140 +72395,116 @@ Methods (count = 8):
     Access flags: 0x4
       = protected void onCreate(android.os.Bundle)
     Class member attributes (count = 2):
-    + Code attribute instructions (code length = 172, locals = 5, stack = 5):
+    + Code attribute instructions (code length = 140, locals = 5, stack = 5):
       [0] aload_0 v0
       [1] aload_1 v1
-      [2] invokespecial #52
+      [2] invokespecial #47
         + Methodref [android/app/Activity.onCreate (Landroid/os/Bundle;)V]
       [5] aload_0 v0
-      [6] invokevirtual #72
+      [6] invokevirtual #66
         + Methodref [com/kyler/mockup/activities/RequestByEmail.getActionBar ()Landroid/app/ActionBar;]
       [9] iconst_1
-      [10] invokevirtual #46
+      [10] invokevirtual #41
         + Methodref [android/app/ActionBar.setDisplayHomeAsUpEnabled (Z)V]
       [13] aload_0 v0
-      [14] invokevirtual #72
+      [14] invokevirtual #66
         + Methodref [com/kyler/mockup/activities/RequestByEmail.getActionBar ()Landroid/app/ActionBar;]
       [17] iconst_1
-      [18] invokevirtual #47
+      [18] invokevirtual #42
         + Methodref [android/app/ActionBar.setHomeButtonEnabled (Z)V]
       [21] aload_0 v0
-      [22] ldc #5
+      [22] ldc #3
         + Integer [2130903047]
-      [24] invokevirtual #76
+      [24] invokevirtual #69
         + Methodref [com/kyler/mockup/activities/RequestByEmail.setContentView (I)V]
       [27] aload_0 v0
-      [28] invokevirtual #72
+      [28] invokevirtual #66
         + Methodref [com/kyler/mockup/activities/RequestByEmail.getActionBar ()Landroid/app/ActionBar;]
-      [31] ldc #4
+      [31] ldc #2
         + Integer [2130837515]
-      [33] invokevirtual #48
+      [33] invokevirtual #43
         + Methodref [android/app/ActionBar.setIcon (I)V]
-      [36] new #31
+      [36] new #28
         + Class [android/text/SpannableString]
       [39] dup
-      [40] ldc #15
+      [40] ldc #13
         + String [Request]
-      [42] invokespecial #61
+      [42] invokespecial #56
         + Methodref [android/text/SpannableString.<init> (Ljava/lang/CharSequence;)V]
       [45] astore_2 v2
       [46] aload_2 v2
-      [47] new #32
+      [47] new #29
         + Class [android/text/style/TypefaceSpan]
       [50] dup
-      [51] ldc #22
+      [51] ldc #20
         + String [sans-serif-thin]
-      [53] invokespecial #64
+      [53] invokespecial #59
         + Methodref [android/text/style/TypefaceSpan.<init> (Ljava/lang/String;)V]
       [56] iconst_0
       [57] aload_2 v2
-      [58] invokevirtual #62
+      [58] invokevirtual #57
         + Methodref [android/text/SpannableString.length ()I]
       [61] bipush 33
-      [63] invokevirtual #63
+      [63] invokevirtual #58
         + Methodref [android/text/SpannableString.setSpan (Ljava/lang/Object;III)V]
       [66] aload_0 v0
-      [67] invokevirtual #72
+      [67] invokevirtual #66
         + Methodref [com/kyler/mockup/activities/RequestByEmail.getActionBar ()Landroid/app/ActionBar;]
       [70] astore_3 v3
       [71] aload_3 v3
       [72] aload_2 v2
-      [73] invokevirtual #49
+      [73] invokevirtual #44
         + Methodref [android/app/ActionBar.setTitle (Ljava/lang/CharSequence;)V]
-      [76] getstatic #42
-        + Fieldref [android/os/Build$VERSION.SDK_INT I]
-      [79] bipush 19
-      [81] ificmplt +27 (target=108)
-      [84] aload_0 v0
-      [85] invokevirtual #74
-        + Methodref [com/kyler/mockup/activities/RequestByEmail.getWindow ()Landroid/view/Window;]
-      [88] astore v4
-      [90] aload v4
-      [92] ldc #3
-        + Integer [134217728]
-      [94] ldc #3
-        + Integer [134217728]
-      [96] invokevirtual #66
-        + Methodref [android/view/Window.setFlags (II)V]
-      [99] aload v4
-      [101] ldc #2
-        + Integer [67108864]
-      [103] ldc #2
-        + Integer [67108864]
-      [105] invokevirtual #66
-        + Methodref [android/view/Window.setFlags (II)V]
-      [108] aload_0 v0
-      [109] aload_0 v0
-      [110] ldc #8
+      [76] aload_0 v0
+      [77] aload_0 v0
+      [78] ldc #6
         + Integer [2131296256]
-      [112] invokevirtual #71
+      [80] invokevirtual #65
         + Methodref [com/kyler/mockup/activities/RequestByEmail.findViewById (I)Landroid/view/View;]
-      [115] checkcast #37
+      [83] checkcast #33
         + Class [android/widget/EditText]
-      [118] putfield #43
+      [86] putfield #38
         + Fieldref [com/kyler/mockup/activities/RequestByEmail.a Landroid/widget/EditText;]
-      [121] aload_0 v0
-      [122] aload_0 v0
-      [123] ldc #9
-        + Integer [2131296277]
-      [125] invokevirtual #71
+      [89] aload_0 v0
+      [90] aload_0 v0
+      [91] ldc #7
+        + Integer [2131296278]
+      [93] invokevirtual #65
         + Methodref [com/kyler/mockup/activities/RequestByEmail.findViewById (I)Landroid/view/View;]
-      [128] checkcast #37
+      [96] checkcast #33
         + Class [android/widget/EditText]
-      [131] putfield #44
+      [99] putfield #39
         + Fieldref [com/kyler/mockup/activities/RequestByEmail.b Landroid/widget/EditText;]
-      [134] aload_0 v0
-      [135] aload_0 v0
-      [136] ldc #10
-        + Integer [2131296280]
-      [138] invokevirtual #71
+      [102] aload_0 v0
+      [103] aload_0 v0
+      [104] ldc #8
+        + Integer [2131296281]
+      [106] invokevirtual #65
         + Methodref [com/kyler/mockup/activities/RequestByEmail.findViewById (I)Landroid/view/View;]
-      [141] checkcast #37
+      [109] checkcast #33
         + Class [android/widget/EditText]
-      [144] putfield #45
+      [112] putfield #40
         + Fieldref [com/kyler/mockup/activities/RequestByEmail.c Landroid/widget/EditText;]
-      [147] aload_0 v0
-      [148] ldc #11
-        + Integer [2131296282]
-      [150] invokevirtual #71
+      [115] aload_0 v0
+      [116] ldc #9
+        + Integer [2131296283]
+      [118] invokevirtual #65
         + Methodref [com/kyler/mockup/activities/RequestByEmail.findViewById (I)Landroid/view/View;]
-      [153] checkcast #36
+      [121] checkcast #32
         + Class [android/widget/Button]
-      [156] astore v4
-      [158] aload v4
-      [160] new #40
+      [124] astore v4
+      [126] aload v4
+      [128] new #36
         + Class [com/kyler/mockup/activities/b]
-      [163] dup
-      [164] aload_0 v0
-      [165] invokespecial #78
+      [131] dup
+      [132] aload_0 v0
+      [133] invokespecial #71
         + Methodref [com/kyler/mockup/activities/b.<init> (Lcom/kyler/mockup/activities/RequestByEmail;)V]
-      [168] invokevirtual #67
+      [136] invokevirtual #61
         + Methodref [android/widget/Button.setOnClickListener (Landroid/view/View$OnClickListener;)V]
-      [171] return
+      [139] return
       Code attribute exceptions (count = 0):
-      Code attribute attributes (attribute count = 1):
-      + Stack map table attribute (count = 1):
-        - [108] Var: ...[a:android/text/SpannableString][a:android/app/ActionBar], Stack: (empty)
+      Code attribute attributes (attribute count = 0):
     + Runtime invisible annotations attribute:
       - Annotation [Landroid/annotation/SuppressLint;]:
         - Array element value [value]:
@@ -72628,87 +72519,87 @@ Methods (count = 8):
     Class member attributes (count = 1):
     + Code attribute instructions (code length = 113, locals = 4, stack = 4):
       [0] iconst_1
-      [1] anewarray #41
+      [1] anewarray #37
         + Class [java/lang/String]
       [4] dup
       [5] iconst_0
       [6] aload_0 v0
-      [7] getfield #43
+      [7] getfield #38
         + Fieldref [com/kyler/mockup/activities/RequestByEmail.a Landroid/widget/EditText;]
-      [10] invokevirtual #68
+      [10] invokevirtual #62
         + Methodref [android/widget/EditText.getText ()Landroid/text/Editable;]
-      [13] invokeinterface #79
+      [13] invokeinterface #72
         + InterfaceMethodref [android/text/Editable.toString ()Ljava/lang/String;]
       [18] aastore
       [19] astore_1 v1
-      [20] new #27
+      [20] new #25
         + Class [android/content/Intent]
       [23] dup
-      [24] ldc #16
+      [24] ldc #14
         + String [android.intent.action.SEND]
-      [26] ldc #20
+      [26] ldc #18
         + String [mailto:]
-      [28] invokestatic #60
+      [28] invokestatic #55
         + Methodref [android/net/Uri.parse (Ljava/lang/String;)Landroid/net/Uri;]
-      [31] invokespecial #55
+      [31] invokespecial #50
         + Methodref [android/content/Intent.<init> (Ljava/lang/String;Landroid/net/Uri;)V]
       [34] astore_2 v2
       [35] aload_2 v2
-      [36] ldc #21
+      [36] ldc #19
         + String [message/rfc822]
-      [38] invokevirtual #59
+      [38] invokevirtual #54
         + Methodref [android/content/Intent.setType (Ljava/lang/String;)Landroid/content/Intent;]
       [41] pop
       [42] aload_2 v2
-      [43] ldc #17
+      [43] ldc #15
         + String [android.intent.extra.EMAIL]
       [45] aload_1 v1
-      [46] invokevirtual #58
+      [46] invokevirtual #53
         + Methodref [android/content/Intent.putExtra (Ljava/lang/String;[Ljava/lang/String;)Landroid/content/Intent;]
       [49] pop
       [50] aload_2 v2
-      [51] ldc #18
+      [51] ldc #16
         + String [android.intent.extra.SUBJECT]
       [53] aload_0 v0
-      [54] getfield #44
+      [54] getfield #39
         + Fieldref [com/kyler/mockup/activities/RequestByEmail.b Landroid/widget/EditText;]
-      [57] invokevirtual #68
+      [57] invokevirtual #62
         + Methodref [android/widget/EditText.getText ()Landroid/text/Editable;]
-      [60] invokeinterface #79
+      [60] invokeinterface #72
         + InterfaceMethodref [android/text/Editable.toString ()Ljava/lang/String;]
-      [65] invokevirtual #57
+      [65] invokevirtual #52
         + Methodref [android/content/Intent.putExtra (Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;]
       [68] pop
       [69] aload_2 v2
-      [70] ldc #19
+      [70] ldc #17
         + String [android.intent.extra.TEXT]
       [72] aload_0 v0
-      [73] getfield #45
+      [73] getfield #40
         + Fieldref [com/kyler/mockup/activities/RequestByEmail.c Landroid/widget/EditText;]
-      [76] invokevirtual #68
+      [76] invokevirtual #62
         + Methodref [android/widget/EditText.getText ()Landroid/text/Editable;]
-      [79] invokeinterface #79
+      [79] invokeinterface #72
         + InterfaceMethodref [android/text/Editable.toString ()Ljava/lang/String;]
-      [84] invokevirtual #57
+      [84] invokevirtual #52
         + Methodref [android/content/Intent.putExtra (Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;]
       [87] pop
       [88] aload_0 v0
       [89] aload_2 v2
-      [90] ldc #14
+      [90] ldc #12
         + String [Please choose an Email Client]
-      [92] invokestatic #56
+      [92] invokestatic #51
         + Methodref [android/content/Intent.createChooser (Landroid/content/Intent;Ljava/lang/CharSequence;)Landroid/content/Intent;]
-      [95] invokevirtual #77
+      [95] invokevirtual #70
         + Methodref [com/kyler/mockup/activities/RequestByEmail.startActivity (Landroid/content/Intent;)V]
       [98] goto +14 (target=112)
       [101] astore_3 v3
       [102] aload_0 v0
-      [103] ldc #13
+      [103] ldc #11
         + String [No email client installed.]
       [105] iconst_1
-      [106] invokestatic #69
+      [106] invokestatic #63
         + Methodref [android/widget/Toast.makeText (Landroid/content/Context;Ljava/lang/CharSequence;I)Landroid/widget/Toast;]
-      [109] invokevirtual #70
+      [109] invokevirtual #64
         + Methodref [android/widget/Toast.show ()V]
       [112] return
       Code attribute exceptions (count = 1):
@@ -72724,18 +72615,18 @@ Methods (count = 8):
     Class member attributes (count = 1):
     + Code attribute instructions (code length = 18, locals = 3, stack = 3):
       [0] aload_0 v0
-      [1] invokevirtual #73
+      [1] invokevirtual #67
         + Methodref [com/kyler/mockup/activities/RequestByEmail.getMenuInflater ()Landroid/view/MenuInflater;]
       [4] astore_2 v2
       [5] aload_2 v2
-      [6] ldc #12
+      [6] ldc #10
         + Integer [2131492864]
       [8] aload_1 v1
-      [9] invokevirtual #65
+      [9] invokevirtual #60
         + Methodref [android/view/MenuInflater.inflate (ILandroid/view/Menu;)V]
       [12] aload_0 v0
       [13] aload_1 v1
-      [14] invokespecial #53
+      [14] invokespecial #48
         + Methodref [android/app/Activity.onCreateOptionsMenu (Landroid/view/Menu;)Z]
       [17] ireturn
       Code attribute exceptions (count = 0):
@@ -72746,7 +72637,7 @@ Methods (count = 8):
     Class member attributes (count = 1):
     + Code attribute instructions (code length = 53, locals = 2, stack = 3):
       [0] aload_1 v1
-      [1] invokeinterface #80
+      [1] invokeinterface #73
         + InterfaceMethodref [android/view/MenuItem.getItemId ()I]
       [6] lookupswitch (2 offsets, default=41) (target=47)
         16908332: offset = 29, target = 35
@@ -72754,18 +72645,18 @@ Methods (count = 8):
         default: offset = 41, target = 47
       [32] goto +15 (target=47)
       [35] aload_0 v0
-      [36] invokespecial #51
+      [36] invokespecial #46
         + Methodref [android/app/Activity.onBackPressed ()V]
       [39] aload_0 v0
-      [40] ldc #6
+      [40] ldc #4
         + Integer [2130968576]
-      [42] ldc #7
+      [42] ldc #5
         + Integer [2130968577]
-      [44] invokevirtual #75
+      [44] invokevirtual #68
         + Methodref [com/kyler/mockup/activities/RequestByEmail.overridePendingTransition (II)V]
       [47] aload_0 v0
       [48] aload_1 v1
-      [49] invokespecial #54
+      [49] invokespecial #49
         + Methodref [android/app/Activity.onOptionsItemSelected (Landroid/view/MenuItem;)Z]
       [52] ireturn
       Code attribute exceptions (count = 0):
@@ -72780,7 +72671,7 @@ Methods (count = 8):
     Class member attributes (count = 1):
     + Code attribute instructions (code length = 5, locals = 1, stack = 1):
       [0] aload_0 v0
-      [1] getfield #43
+      [1] getfield #38
         + Fieldref [com/kyler/mockup/activities/RequestByEmail.a Landroid/widget/EditText;]
       [4] areturn
       Code attribute exceptions (count = 0):
@@ -72791,7 +72682,7 @@ Methods (count = 8):
     Class member attributes (count = 1):
     + Code attribute instructions (code length = 5, locals = 1, stack = 1):
       [0] aload_0 v0
-      [1] getfield #44
+      [1] getfield #39
         + Fieldref [com/kyler/mockup/activities/RequestByEmail.b Landroid/widget/EditText;]
       [4] areturn
       Code attribute exceptions (count = 0):
@@ -72802,7 +72693,7 @@ Methods (count = 8):
     Class member attributes (count = 1):
     + Code attribute instructions (code length = 5, locals = 1, stack = 1):
       [0] aload_0 v0
-      [1] getfield #45
+      [1] getfield #40
         + Fieldref [com/kyler/mockup/activities/RequestByEmail.c Landroid/widget/EditText;]
       [4] areturn
       Code attribute exceptions (count = 0):
@@ -72925,6 +72816,162 @@ Methods (count = 2):
       [40] invokevirtual #10
         + Methodref [android/widget/EditText.setText (Ljava/lang/CharSequence;)V]
       [43] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+
+Class file attributes (count = 0):
+
+_____________________________________________________________________
++ Program class: com/kyler/mockup/activities/TranslucentExample
+  Superclass:    android/app/Activity
+  Major version: 0x32
+  Minor version: 0x0
+  Access flags:  0x21
+    = public class com.kyler.mockup.activities.TranslucentExample extends android.app.Activity
+
+Interfaces (count = 0):
+
+Constant Pool (count = 62):
+  + Integer [2130837515]
+  + Integer [2130903052]
+  + Integer [2131361793]
+  + String [         ]
+  + String [sans-serif-thin]
+  + Class [android/app/ActionBar]
+  + Class [android/app/Activity]
+  + Class [android/text/SpannableString]
+  + Class [android/text/style/TypefaceSpan]
+  + Class [com/kyler/mockup/activities/TranslucentExample]
+  + Methodref [android/app/ActionBar.setDisplayHomeAsUpEnabled (Z)V]
+  + Methodref [android/app/ActionBar.setHomeButtonEnabled (Z)V]
+  + Methodref [android/app/ActionBar.setIcon (I)V]
+  + Methodref [android/app/ActionBar.setTitle (I)V]
+  + Methodref [android/app/Activity.<init> ()V]
+  + Methodref [android/app/Activity.onCreate (Landroid/os/Bundle;)V]
+  + Methodref [android/text/SpannableString.<init> (Ljava/lang/CharSequence;)V]
+  + Methodref [android/text/SpannableString.length ()I]
+  + Methodref [android/text/SpannableString.setSpan (Ljava/lang/Object;III)V]
+  + Methodref [android/text/style/TypefaceSpan.<init> (Ljava/lang/String;)V]
+  + Methodref [com/kyler/mockup/activities/TranslucentExample.getActionBar ()Landroid/app/ActionBar;]
+  + Methodref [com/kyler/mockup/activities/TranslucentExample.setContentView (I)V]
+  + NameAndType [<init> ()V]
+  + NameAndType [<init> (Ljava/lang/CharSequence;)V]
+  + NameAndType [<init> (Ljava/lang/String;)V]
+  + NameAndType [getActionBar ()Landroid/app/ActionBar;]
+  + NameAndType [length ()I]
+  + NameAndType [onCreate (Landroid/os/Bundle;)V]
+  + NameAndType [setContentView (I)V]
+  + NameAndType [setDisplayHomeAsUpEnabled (Z)V]
+  + NameAndType [setHomeButtonEnabled (Z)V]
+  + NameAndType [setIcon (I)V]
+  + NameAndType [setSpan (Ljava/lang/Object;III)V]
+  + NameAndType [setTitle (I)V]
+  + Utf8 [         ]
+  + Utf8 [()I]
+  + Utf8 [()Landroid/app/ActionBar;]
+  + Utf8 [()V]
+  + Utf8 [(I)V]
+  + Utf8 [(Landroid/os/Bundle;)V]
+  + Utf8 [(Ljava/lang/CharSequence;)V]
+  + Utf8 [(Ljava/lang/Object;III)V]
+  + Utf8 [(Ljava/lang/String;)V]
+  + Utf8 [(Z)V]
+  + Utf8 [<init>]
+  + Utf8 [Code]
+  + Utf8 [android/app/ActionBar]
+  + Utf8 [android/app/Activity]
+  + Utf8 [android/text/SpannableString]
+  + Utf8 [android/text/style/TypefaceSpan]
+  + Utf8 [com/kyler/mockup/activities/TranslucentExample]
+  + Utf8 [getActionBar]
+  + Utf8 [length]
+  + Utf8 [onCreate]
+  + Utf8 [sans-serif-thin]
+  + Utf8 [setContentView]
+  + Utf8 [setDisplayHomeAsUpEnabled]
+  + Utf8 [setHomeButtonEnabled]
+  + Utf8 [setIcon]
+  + Utf8 [setSpan]
+  + Utf8 [setTitle]
+
+Fields (count = 0):
+
+Methods (count = 2):
+  - Method:       <init>()V
+    Access flags: 0x1
+      = public TranslucentExample()
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 5, locals = 1, stack = 1):
+      [0] aload_0 v0
+      [1] invokespecial #15
+        + Methodref [android/app/Activity.<init> ()V]
+      [4] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       onCreate(Landroid/os/Bundle;)V
+    Access flags: 0x4
+      = protected void onCreate(android.os.Bundle)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 76, locals = 3, stack = 5):
+      [0] aload_0 v0
+      [1] aload_1 v1
+      [2] invokespecial #16
+        + Methodref [android/app/Activity.onCreate (Landroid/os/Bundle;)V]
+      [5] aload_0 v0
+      [6] ldc #2
+        + Integer [2130903052]
+      [8] invokevirtual #22
+        + Methodref [com/kyler/mockup/activities/TranslucentExample.setContentView (I)V]
+      [11] aload_0 v0
+      [12] invokevirtual #21
+        + Methodref [com/kyler/mockup/activities/TranslucentExample.getActionBar ()Landroid/app/ActionBar;]
+      [15] ldc #3
+        + Integer [2131361793]
+      [17] invokevirtual #14
+        + Methodref [android/app/ActionBar.setTitle (I)V]
+      [20] aload_0 v0
+      [21] invokevirtual #21
+        + Methodref [com/kyler/mockup/activities/TranslucentExample.getActionBar ()Landroid/app/ActionBar;]
+      [24] ldc #1
+        + Integer [2130837515]
+      [26] invokevirtual #13
+        + Methodref [android/app/ActionBar.setIcon (I)V]
+      [29] new #8
+        + Class [android/text/SpannableString]
+      [32] dup
+      [33] ldc #4
+        + String [         ]
+      [35] invokespecial #17
+        + Methodref [android/text/SpannableString.<init> (Ljava/lang/CharSequence;)V]
+      [38] astore_2 v2
+      [39] aload_2 v2
+      [40] new #9
+        + Class [android/text/style/TypefaceSpan]
+      [43] dup
+      [44] ldc #5
+        + String [sans-serif-thin]
+      [46] invokespecial #20
+        + Methodref [android/text/style/TypefaceSpan.<init> (Ljava/lang/String;)V]
+      [49] iconst_0
+      [50] aload_2 v2
+      [51] invokevirtual #18
+        + Methodref [android/text/SpannableString.length ()I]
+      [54] bipush 33
+      [56] invokevirtual #19
+        + Methodref [android/text/SpannableString.setSpan (Ljava/lang/Object;III)V]
+      [59] aload_0 v0
+      [60] invokevirtual #21
+        + Methodref [com/kyler/mockup/activities/TranslucentExample.getActionBar ()Landroid/app/ActionBar;]
+      [63] iconst_1
+      [64] invokevirtual #11
+        + Methodref [android/app/ActionBar.setDisplayHomeAsUpEnabled (Z)V]
+      [67] aload_0 v0
+      [68] invokevirtual #21
+        + Methodref [com/kyler/mockup/activities/TranslucentExample.getActionBar ()Landroid/app/ActionBar;]
+      [71] iconst_1
+      [72] invokevirtual #12
+        + Methodref [android/app/ActionBar.setHomeButtonEnabled (Z)V]
+      [75] return
       Code attribute exceptions (count = 0):
       Code attribute attributes (attribute count = 0):
 

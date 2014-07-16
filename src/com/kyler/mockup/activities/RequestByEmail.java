@@ -15,8 +15,6 @@ import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
-import android.view.Window;
-import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
@@ -34,11 +32,11 @@ public class RequestByEmail extends Activity {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		
+
 		getActionBar().setDisplayHomeAsUpEnabled(true);
 
 		getActionBar().setHomeButtonEnabled(true);
-		
+
 		setContentView(R.layout.request);
 
 		getActionBar().setIcon(R.drawable.invisible);
@@ -50,17 +48,6 @@ public class RequestByEmail extends Activity {
 		// Update the action bar title with the TypefaceSpan instance
 		ActionBar actionBar = getActionBar();
 		actionBar.setTitle(s);
-
-		if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
-			Window w = getWindow();
-
-			w.setFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_NAVIGATION,
-					WindowManager.LayoutParams.FLAG_TRANSLUCENT_NAVIGATION);
-
-			w.setFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS,
-					WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
-
-		}
 
 		recipient = (EditText) findViewById(R.id.recipient);
 		subject = (EditText) findViewById(R.id.subject);
